@@ -15,14 +15,19 @@
   <!-- ═══ NAV ═══ -->
   <nav id="nav" class="nav">
     <div class="nav__inner">
-<ul class="nav__links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#credentials">Credentials</a></li>
-        <li><a href="#contact" class="nav__contact">Contact</a></li>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about"       data-i18n="nav.about">About</a></li>
+        <li><a href="#experience"  data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#skills"      data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects"    data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#credentials" data-i18n="nav.credentials">Credentials</a></li>
+        <li><a href="#contact" class="nav__contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn lang-btn--active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+        <button class="lang-btn" data-lang="nl">NL</button>
+      </div>
       <button class="nav__toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -52,14 +57,14 @@
 
       <!-- left: text content -->
       <div class="hero__text">
-        <p class="hero__label">Database Expert · Data Engineer · AI Practitioner</p>
+        <p class="hero__label" data-i18n="hero.label">Database Expert · Data Engineer · AI Practitioner</p>
         <h1 class="hero__name">
           <span class="hero__name-l1">Luyza</span>
           <span class="hero__name-l2">Alexandre</span>
         </h1>
-        <p class="hero__sub">Netherlands &nbsp;—&nbsp; <span class="hero__status">Open to opportunities</span></p>
+        <p class="hero__sub"><span data-i18n="hero.location">Netherlands</span> &nbsp;—&nbsp; <span class="hero__status" data-i18n="hero.status">Open to opportunities</span></p>
         <div class="hero__actions">
-          <a href="#contact" class="btn btn--primary">Get in touch</a>
+          <a href="#contact" class="btn btn--primary" data-i18n="hero.btn.contact">Get in touch</a>
           <a href="https://www.linkedin.com/in/luyza-t-alexandre-74ba9617/" target="_blank" rel="noopener" class="btn btn--outline">LinkedIn ↗</a>
           <a href="https://drive.google.com/file/d/1rkyta44aRv85ohCqflvxnJPnY4Fa9nzq/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn--ghost">Download CV ↗</a>
         </div>
@@ -293,22 +298,22 @@
     <div class="statsbar__inner">
       <div class="statsbar__item">
         <strong>14+</strong>
-        <span>Years of Experience</span>
+        <span data-i18n="stats.years">Years of Experience</span>
       </div>
       <div class="statsbar__sep"></div>
       <div class="statsbar__item">
         <strong>4</strong>
-        <span>Countries Worked In</span>
+        <span data-i18n="stats.countries">Countries Worked In</span>
       </div>
       <div class="statsbar__sep"></div>
       <div class="statsbar__item">
         <strong>MBA</strong>
-        <span>Data Science & AI — 2025</span>
+        <span data-i18n="stats.mba">Data Science & AI — 2025</span>
       </div>
       <div class="statsbar__sep"></div>
       <div class="statsbar__item">
         <strong>Azure</strong>
-        <span>Certified</span>
+        <span data-i18n="stats.azure">Certified</span>
       </div>
     </div>
   </div>
@@ -318,23 +323,23 @@
     <!-- ═══ ABOUT ═══ -->
     <section id="about" class="section">
       <div class="wrap">
-        <h2 class="section-title">Profile</h2>
+        <h2 class="section-title" data-i18n="about.title">Profile</h2>
         <div class="about">
           <div class="about__text">
-            <p>
+            <p data-i18n="about.p1">
               I am a database professional with over 14 years of enterprise experience at global
               organisations including HSBC Bank, Nordea Bank, and NTT Data Business Solutions. My
               deep expertise lies in IBM DB2 LUW production environments, system reliability, and
               large-scale database management across financial services and consulting sectors.
             </p>
-            <p>
+            <p data-i18n="about.p2">
               Since 2021, I have been actively building a second layer of skills in modern data
               engineering, cloud computing, and artificial intelligence. I completed an MBA in Data
               Science & Artificial Intelligence (FIAP, 2025), earned Microsoft Azure certifications,
               and am working through the Databricks Data Engineer learning path. My aim is a role
               where deep technical foundations meet modern data infrastructure challenges.
             </p>
-            <p>
+            <p data-i18n="about.p3">
               I am based in Utrecht and fully committed to a long-term career in the Netherlands.
               Having lived and worked in four countries — Brazil, Poland, Bulgaria, and the
               Netherlands — I bring a multicultural perspective that makes me effective in the
@@ -343,14 +348,14 @@
           </div>
           <div class="about__sidebar">
             <div class="highlights">
-              <h3 class="highlights__title">Key highlights</h3>
+              <h3 class="highlights__title" data-i18n="about.highlights.title">Key highlights</h3>
               <ul class="highlights__list">
-                <li>14+ years enterprise DBA at HSBC, Nordea & NTT Data</li>
-                <li>MBA in Data Science & AI — FIAP (2025)</li>
-                <li>Microsoft Azure Certified (AZ-900 & Data Fundamentals)</li>
-                <li>5 active IBM DB2 LUW certifications</li>
-                <li>Based in Utrecht — permanent resident, NL</li>
-                <li>Trilingual: Portuguese · English · Dutch (learning)</li>
+                <li data-i18n="about.h1">14+ years enterprise DBA at HSBC, Nordea & NTT Data</li>
+                <li data-i18n="about.h2">MBA in Data Science & AI — FIAP (2025)</li>
+                <li data-i18n="about.h3">Microsoft Azure Certified (AZ-900 & Data Fundamentals)</li>
+                <li data-i18n="about.h4">5 active IBM DB2 LUW certifications</li>
+                <li data-i18n="about.h5">Based in Utrecht — permanent resident, NL</li>
+                <li data-i18n="about.h6">Trilingual: Portuguese · English · Dutch (learning)</li>
               </ul>
             </div>
             <div class="contact-card">
@@ -366,10 +371,15 @@
           </div>
         </div>
         <div class="hobbies animate">
-          <h4 class="hobbies__label">Interests</h4>
+          <h4 class="hobbies__label" data-i18n="about.interests">Interests</h4>
           <div class="tags">
-            <span>Photography</span><span>Poetry</span><span>Kayaking</span>
-            <span>Camping</span><span>Painting</span><span>Art</span><span>New Cultures</span>
+            <span data-i18n="hobby.photography">Photography</span>
+            <span data-i18n="hobby.poetry">Poetry</span>
+            <span data-i18n="hobby.kayaking">Kayaking</span>
+            <span data-i18n="hobby.camping">Camping</span>
+            <span data-i18n="hobby.painting">Painting</span>
+            <span data-i18n="hobby.art">Art</span>
+            <span data-i18n="hobby.newcultures">New Cultures</span>
           </div>
         </div>
       </div>
@@ -378,7 +388,7 @@
     <!-- ═══ EXPERIENCE ═══ -->
     <section id="experience" class="section section--alt">
       <div class="wrap">
-        <h2 class="section-title">Work Experience</h2>
+        <h2 class="section-title" data-i18n="exp.title">Work Experience</h2>
         <div class="timeline">
 
           <div class="exp animate">
@@ -389,14 +399,14 @@
               <div class="exp__header">
                 <div>
                   <h3 class="exp__company">NTT Data Business Solutions</h3>
-                  <p class="exp__role">Database Consultant &nbsp;·&nbsp; Utrecht, Netherlands</p>
+                  <p class="exp__role" data-i18n="exp.ntt.role">Database Consultant · Utrecht, Netherlands</p>
                 </div>
                 <div class="exp__right">
-                  <span class="exp__period">2021 — Present</span>
-                  <span class="exp__badge">Current</span>
+                  <span class="exp__period" data-i18n="exp.ntt.period">2021 — Present</span>
+                  <span class="exp__badge" data-i18n="exp.ntt.badge">Current</span>
                 </div>
               </div>
-              <p class="exp__desc">
+              <p class="exp__desc" data-i18n="exp.ntt.desc">
                 Supporting SAP DB2/DB6 production databases in a cross-country team across the
                 Netherlands, Germany, Mexico, and India. Primary technical contact for database
                 reliability, performance, and escalation in large-scale enterprise SAP environments.
@@ -415,11 +425,11 @@
               <div class="exp__header">
                 <div>
                   <h3 class="exp__company">Nordea Bank</h3>
-                  <p class="exp__role">Senior Database Administrator &nbsp;·&nbsp; Warsaw, Poland</p>
+                  <p class="exp__role" data-i18n="exp.nordea.role">Senior Database Administrator · Warsaw, Poland</p>
                 </div>
-                <span class="exp__period">2018 — 2021</span>
+                <span class="exp__period" data-i18n="exp.nordea.period">2018 — 2021</span>
               </div>
-              <p class="exp__desc">
+              <p class="exp__desc" data-i18n="exp.nordea.desc">
                 DB2 production and development database support for a pan-Scandinavian banking group
                 (Poland, Finland, Sweden, Denmark). Led DB2 LUW maintenance, upgrades, fixpacking,
                 and audit implementation. Primary technical contact for all database projects.
@@ -438,11 +448,11 @@
               <div class="exp__header">
                 <div>
                   <h3 class="exp__company">HSBC Bank</h3>
-                  <p class="exp__role">Senior Database Administrator &nbsp;·&nbsp; São Paulo, Brazil</p>
+                  <p class="exp__role" data-i18n="exp.hsbc.role">Senior Database Administrator · São Paulo, Brazil</p>
                 </div>
-                <span class="exp__period">2013 — 2015</span>
+                <span class="exp__period" data-i18n="exp.hsbc.period">2013 — 2015</span>
               </div>
-              <p class="exp__desc">
+              <p class="exp__desc" data-i18n="exp.hsbc.desc">
                 Member of a 24/7 global DB2 LUW production support rotation across US, UK, Brazil,
                 India, and China. Responsible for incident management, troubleshooting, backup and
                 recovery, change management, and root cause analysis for global banking infrastructure.
@@ -454,8 +464,8 @@
           </div>
 
           <div class="exp__more animate">
-            Additional experience in Brazil 2008–2013 &nbsp;—&nbsp;
-            <a href="https://www.linkedin.com/in/luyza-t-alexandre-74ba9617/" target="_blank" rel="noopener">full history on LinkedIn ↗</a>
+            <span data-i18n="exp.more">Additional experience in Brazil 2008–2013</span> &nbsp;—&nbsp;
+            <a href="https://www.linkedin.com/in/luyza-t-alexandre-74ba9617/" target="_blank" rel="noopener"><span data-i18n="exp.more.link">full history on LinkedIn ↗</span></a>
           </div>
 
         </div>
@@ -465,13 +475,13 @@
     <!-- ═══ SKILLS ═══ -->
     <section id="skills" class="section">
       <div class="wrap">
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title" data-i18n="skills.title">Skills</h2>
         <div class="skills-grid">
 
           <div class="skill-group animate">
             <h4 class="skill-group__title">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
-              Database
+              <span data-i18n="skills.database">Database</span>
             </h4>
             <div class="tags">
               <span class="tag--strong">IBM DB2 LUW</span>
@@ -488,7 +498,7 @@
           <div class="skill-group animate">
             <h4 class="skill-group__title">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-              Data Engineering
+              <span data-i18n="skills.dataeng">Data Engineering</span>
             </h4>
             <div class="tags">
               <span class="tag--strong">Databricks</span>
@@ -504,7 +514,7 @@
           <div class="skill-group animate">
             <h4 class="skill-group__title">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-              Data Science & AI
+              <span data-i18n="skills.datasci">Data Science & AI</span>
             </h4>
             <div class="tags">
               <span class="tag--strong">Exploratory Data Analysis</span>
@@ -519,7 +529,7 @@
           <div class="skill-group animate">
             <h4 class="skill-group__title">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
-              Cloud & Tools
+              <span data-i18n="skills.cloud">Cloud & Tools</span>
             </h4>
             <div class="tags">
               <span class="tag--strong">Microsoft Azure</span>
@@ -534,7 +544,7 @@
           <div class="skill-group animate">
             <h4 class="skill-group__title">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              Soft Skills
+              <span data-i18n="skills.soft">Soft Skills</span>
             </h4>
             <div class="tags">
               <span>Customer Orientation</span>
@@ -551,16 +561,16 @@
     <!-- ═══ PROJECTS ═══ -->
     <section id="projects" class="section section--alt">
       <div class="wrap">
-        <h2 class="section-title">Selected Projects</h2>
+        <h2 class="section-title" data-i18n="projects.title">Selected Projects</h2>
         <div class="projects-grid">
 
           <div class="project-card project-card--featured animate">
             <div class="project-card__top">
-              <span class="project-card__label">Geospatial · Data Visualization · Civic Tech</span>
-              <a href="https://brasil-em-jogo-indigenas.vercel.app/" target="_blank" rel="noopener" class="project-card__link">View live ↗</a>
+              <span class="project-card__label" data-i18n="proj.bej.label">Geospatial · Data Visualization · Civic Tech</span>
+              <a href="https://brasil-em-jogo-indigenas.vercel.app/" target="_blank" rel="noopener" class="project-card__link" data-i18n="proj.bej.link">View live ↗</a>
             </div>
-            <h3 class="project-card__title">Brasil em Jogo — Povos Indígenas</h3>
-            <p class="project-card__desc">
+            <h3 class="project-card__title" data-i18n="proj.bej.title">Brasil em Jogo — Povos Indígenas</h3>
+            <p class="project-card__desc" data-i18n="proj.bej.desc">
               Interactive geospatial platform mapping indigenous territories and villages across
               Brazil, built on official FUNAI and IBGE government data. Features territory and
               village visualization, a historical rights timeline from colonization to the 2022
@@ -573,11 +583,11 @@
 
           <div class="project-card animate">
             <div class="project-card__top">
-              <span class="project-card__label">AI Ethics · Content</span>
-              <a href="https://www.instagram.com/aially_ethics/" target="_blank" rel="noopener" class="project-card__link">Instagram ↗</a>
+              <span class="project-card__label" data-i18n="proj.ai.label">AI Ethics · Content</span>
+              <a href="https://www.instagram.com/aially_ethics/" target="_blank" rel="noopener" class="project-card__link" data-i18n="proj.ai.link">Instagram ↗</a>
             </div>
-            <h3 class="project-card__title">AI Ally Ethics</h3>
-            <p class="project-card__desc">
+            <h3 class="project-card__title" data-i18n="proj.ai.title">AI Ally Ethics</h3>
+            <p class="project-card__desc" data-i18n="proj.ai.desc">
               Public platform communicating AI ethics, governance, and responsible innovation
               to a broad audience — translating technical complexity into accessible content.
             </p>
@@ -588,10 +598,10 @@
 
           <div class="project-card animate">
             <div class="project-card__top">
-              <span class="project-card__label">Enterprise Database · Production · Cross-country</span>
+              <span class="project-card__label" data-i18n="proj.db2.label">Enterprise Database · Production · Cross-country</span>
             </div>
-            <h3 class="project-card__title">DB2 LUW Major Version Upgrade — 10.5 to 11.5</h3>
-            <p class="project-card__desc">
+            <h3 class="project-card__title" data-i18n="proj.db2.title">DB2 LUW Major Version Upgrade — 10.5 to 11.5</h3>
+            <p class="project-card__desc" data-i18n="proj.db2.desc">
               Technical leader for a mission-critical DB2 LUW upgrade spanning production
               environments across Mexico, the Netherlands, Germany, and India. Designed the
               upgrade procedure, coordinated distributed teams across time zones, and delivered
@@ -605,11 +615,11 @@
 
           <div class="project-card animate">
             <div class="project-card__top">
-              <span class="project-card__label">Fintech · Machine Learning · MBA</span>
-              <a href="https://github.com/LuyzaTA/fiapmba-quantum/" target="_blank" rel="noopener" class="project-card__link">GitHub ↗</a>
+              <span class="project-card__label" data-i18n="proj.qf.label">Fintech · Machine Learning · MBA</span>
+              <a href="https://github.com/LuyzaTA/fiapmba-quantum/" target="_blank" rel="noopener" class="project-card__link" data-i18n="proj.qf.link">GitHub ↗</a>
             </div>
-            <h3 class="project-card__title">Quantum Finance</h3>
-            <p class="project-card__desc">
+            <h3 class="project-card__title" data-i18n="proj.qf.title">Quantum Finance</h3>
+            <p class="project-card__desc" data-i18n="proj.qf.desc">
               End-to-end data science solution for a fintech use case: exploratory data
               analysis, supervised ML modeling, and AI-driven recommendations applied to
               a real financial domain. Developed as part of the FIAP MBA programme.
@@ -626,75 +636,75 @@
     <!-- ═══ CREDENTIALS ═══ -->
     <section id="credentials" class="section">
       <div class="wrap">
-        <h2 class="section-title">Education & Certifications</h2>
+        <h2 class="section-title" data-i18n="cred.title">Education & Certifications</h2>
         <div class="credentials">
 
           <div class="cred-panel animate">
-            <h3 class="cred-panel__title">Education</h3>
+            <h3 class="cred-panel__title" data-i18n="cred.education">Education</h3>
             <div class="edu-list">
               <div class="edu-item edu-item--featured">
                 <div class="edu-item__year">2023 — 2025</div>
                 <div class="edu-item__content">
-                  <h4>MBA in Data Science & Artificial Intelligence</h4>
-                  <p>FIAP · Brazil</p>
-                  <p class="edu-item__note">Applied fintech project (Quantum Finance) · Leading Technology Transformation · Disruptive Innovation & Mindset</p>
+                  <h4 data-i18n="edu.mba.title">MBA in Data Science & Artificial Intelligence</h4>
+                  <p data-i18n="edu.mba.inst">FIAP · Brazil</p>
+                  <p class="edu-item__note" data-i18n="edu.mba.note">Applied fintech project (Quantum Finance) · Leading Technology Transformation · Disruptive Innovation & Mindset</p>
                 </div>
               </div>
               <div class="edu-item">
                 <div class="edu-item__year">2009 — 2010</div>
                 <div class="edu-item__content">
-                  <h4>Postgraduate: Database Administration</h4>
-                  <p>DB2 & Oracle specialisation</p>
+                  <h4 data-i18n="edu.postgrad.title">Postgraduate: Database Administration</h4>
+                  <p data-i18n="edu.postgrad.spec">DB2 & Oracle specialisation</p>
                 </div>
               </div>
               <div class="edu-item">
                 <div class="edu-item__year">2006 — 2009</div>
                 <div class="edu-item__content">
-                  <h4>B.S. Computer Information Systems</h4>
+                  <h4 data-i18n="edu.bs.title">B.S. Computer Information Systems</h4>
                 </div>
               </div>
               <div class="edu-item">
                 <div class="edu-item__year">2013</div>
                 <div class="edu-item__content">
-                  <h4>English for Academic Purposes — ESL</h4>
-                  <p>Silicon Valley, California · USA</p>
+                  <h4 data-i18n="edu.esl.title">English for Academic Purposes — ESL</h4>
+                  <p data-i18n="edu.esl.inst">Silicon Valley, California · USA</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="cred-panel animate">
-            <h3 class="cred-panel__title">Certifications</h3>
+            <h3 class="cred-panel__title" data-i18n="cred.certifications">Certifications</h3>
 
             <div class="cert-section">
-              <p class="cert-section__label">Cloud · Microsoft Azure</p>
+              <p class="cert-section__label" data-i18n="cert.cloud.label">Cloud · Microsoft Azure</p>
               <ul>
-                <li class="cert cert--done"><span class="cert__icon">✓</span> Azure Fundamentals (AZ-900)</li>
-                <li class="cert cert--done"><span class="cert__icon">✓</span> Azure Data Fundamentals</li>
-                <li class="cert cert--wip"><span class="cert__icon">→</span> Azure Administrator AZ-104 — training completed</li>
-                <li class="cert cert--wip"><span class="cert__icon">→</span> Azure Data Infrastructure DP-305 — training completed</li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> <span data-i18n="cert.az900">Azure Fundamentals (AZ-900)</span></li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> <span data-i18n="cert.azdata">Azure Data Fundamentals</span></li>
+                <li class="cert cert--wip"><span class="cert__icon">→</span> <span data-i18n="cert.az104">Azure Administrator AZ-104 — training completed</span></li>
+                <li class="cert cert--wip"><span class="cert__icon">→</span> <span data-i18n="cert.dp305">Azure Data Infrastructure DP-305 — training completed</span></li>
               </ul>
             </div>
 
             <div class="cert-section">
-              <p class="cert-section__label">IBM DB2</p>
+              <p class="cert-section__label" data-i18n="cert.db2.label">IBM DB2</p>
               <ul>
-                <li class="cert cert--done"><span class="cert__icon">✓</span> DB2 LUW V11.x Advanced DBA (Badge)</li>
-                <li class="cert cert--done"><span class="cert__icon">✓</span> DB2 LUW V11.x DBA (Badge)</li>
-                <li class="cert cert--done"><span class="cert__icon">✓</span> IBM Certified DB2 Database Associate (000-730)</li>
-                <li class="cert cert--done"><span class="cert__icon">✓</span> IBM Certified DB2 LUW DBA (000-731)</li>
-                <li class="cert cert--done"><span class="cert__icon">✓</span> IBM Certified DB2 LUW 10 Associate (000-610)</li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> <span data-i18n="cert.db2adv">DB2 LUW V11.x Advanced DBA (Badge)</span></li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> <span data-i18n="cert.db2dba">DB2 LUW V11.x DBA (Badge)</span></li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> <span data-i18n="cert.db2assoc">IBM Certified DB2 Database Associate (000-730)</span></li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> <span data-i18n="cert.db2luw">IBM Certified DB2 LUW DBA (000-731)</span></li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> <span data-i18n="cert.db2v10">IBM Certified DB2 LUW 10 Associate (000-610)</span></li>
               </ul>
             </div>
 
             <div class="cert-section">
-              <p class="cert-section__label">Data Engineering & Other</p>
+              <p class="cert-section__label" data-i18n="cert.other.label">Data Engineering & Other</p>
               <ul>
-                <li class="cert cert--wip"><span class="cert__icon">→</span> Databricks Data Engineer path — ongoing</li>
-                <li class="cert cert--wip"><span class="cert__icon">→</span> Azure SQL + Power BI — 98h course — ongoing</li>
-                <li class="cert cert--done"><span class="cert__icon">✓</span> Data Engineering Fundamentals — IBM EDX</li>
-                <li class="cert cert--done"><span class="cert__icon">✓</span> ITIL Foundations</li>
-                <li class="cert cert--done"><span class="cert__icon">✓</span> Azure AI & OpenAI Services — 20h</li>
+                <li class="cert cert--wip"><span class="cert__icon">→</span> <span data-i18n="cert.databricks">Databricks Data Engineer path — ongoing</span></li>
+                <li class="cert cert--wip"><span class="cert__icon">→</span> <span data-i18n="cert.azuresql">Azure SQL + Power BI — 98h course — ongoing</span></li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> <span data-i18n="cert.ibmedx">Data Engineering Fundamentals — IBM EDX</span></li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> <span data-i18n="cert.itil">ITIL Foundations</span></li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> <span data-i18n="cert.azureai">Azure AI & OpenAI Services — 20h</span></li>
               </ul>
             </div>
           </div>
@@ -706,7 +716,7 @@
     <!-- ═══ REFERENCES ═══ -->
     <section id="references" class="section">
       <div class="wrap">
-        <h2 class="section-title">References</h2>
+        <h2 class="section-title" data-i18n="refs.title">References</h2>
         <div class="refs-grid">
 
           <div class="ref-card animate">
@@ -739,9 +749,9 @@
     <section id="contact" class="contact">
       <div class="wrap contact__inner">
         <div class="contact__text">
-          <p class="contact__eyebrow">Get in touch</p>
-          <h2 class="contact__title">Let's work together<br>in the Netherlands.</h2>
-          <p class="contact__sub">
+          <p class="contact__eyebrow" data-i18n="contact.eyebrow">Get in touch</p>
+          <h2 class="contact__title" data-i18n-html="contact.title">Let's work together<br>in the Netherlands.</h2>
+          <p class="contact__sub" data-i18n="contact.sub">
             Actively looking for data engineering and data science roles across the Netherlands.
           </p>
         </div>
@@ -749,21 +759,21 @@
           <a href="mailto:alexandre.t.luyza@gmail.com" class="contact-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             <span>
-              <strong>Email</strong>
+              <strong data-i18n="contact.email.label">Email</strong>
               alexandre.t.luyza@gmail.com
             </span>
           </a>
           <a href="https://www.linkedin.com/in/luyza-t-alexandre-74ba9617/" target="_blank" rel="noopener" class="contact-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             <span>
-              <strong>LinkedIn</strong>
+              <strong data-i18n="contact.linkedin.label">LinkedIn</strong>
               luyza-t-alexandre
             </span>
           </a>
           <a href="tel:+31627995317" class="contact-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l1.08-.87a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <span>
-              <strong>Phone</strong>
+              <strong data-i18n="contact.phone.label">Phone</strong>
               +31 6 27 99 53 17
             </span>
           </a>
@@ -775,7 +785,7 @@
 
   <footer class="footer">
     <div class="wrap footer__inner">
-      <p>© 2026 Luyza Alexandre &nbsp;·&nbsp; Utrecht, Netherlands</p>
+      <p data-i18n="footer.copy">© 2026 Luyza Alexandre · Utrecht, Netherlands</p>
       <nav>
         <a href="https://www.linkedin.com/in/luyza-t-alexandre-74ba9617/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://www.instagram.com/aially_ethics/" target="_blank" rel="noopener">@aially_ethics</a>
@@ -785,5 +795,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

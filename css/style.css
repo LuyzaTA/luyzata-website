@@ -1302,3 +1302,49 @@ body {
 @media (min-width: 721px) {
   .nav__toggle { display: none; }
 }
+
+/* ── Language Switcher ── */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: auto;
+  margin-right: 0.75rem;
+}
+
+.lang-btn {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 0.22rem 0.52rem;
+  border-radius: 5px;
+  color: var(--muted);
+  border: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.lang-btn:hover {
+  color: var(--navy);
+  border-color: var(--border);
+  background: var(--bg);
+}
+
+.lang-btn--active {
+  color: var(--accent);
+  border-color: rgba(249,115,22,0.3);
+  background: rgba(249,115,22,0.06);
+}
+
+.nav--hero .lang-btn {
+  color: rgba(255,255,255,0.5);
+}
+.nav--hero .lang-btn:hover {
+  color: rgba(255,255,255,0.85);
+  border-color: rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.07);
+}
+.nav--hero .lang-btn--active {
+  color: white;
+  border-color: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.1);
+}

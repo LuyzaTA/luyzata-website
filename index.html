@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luyza Alexandre — Data Engineer & AI Practitioner · Utrecht, NL</title>
+  <meta name="description" content="Senior data professional with 14+ years of enterprise database experience. Now engineering cloud data and AI solutions. Based in Utrecht, Netherlands.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav id="nav" class="nav">
+    <div class="nav__inner">
+<ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#contact" class="nav__contact">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <header class="hero" id="home">
+
+    <!-- floating geometric background shapes -->
+    <div class="hero__shapes" aria-hidden="true">
+      <div class="hero__shape s1"></div>
+      <div class="hero__shape s2"></div>
+      <div class="hero__shape s3"></div>
+      <div class="hero__shape s4"></div>
+      <div class="hero__shape s5"></div>
+      <div class="hero__shape s6"></div>
+      <div class="hero__shape s7"></div>
+      <div class="hero__shape s8"></div>
+      <div class="hero__shape s9"></div>
+      <div class="hero__shape s10"></div>
+      <div class="hero__shape s11"></div>
+      <div class="hero__shape s12"></div>
+    </div>
+
+    <div class="hero__inner">
+
+      <!-- left: text content -->
+      <div class="hero__text">
+        <p class="hero__label">Database Expert · Data Engineer · AI Practitioner</p>
+        <h1 class="hero__name">
+          <span class="hero__name-l1">Luyza</span>
+          <span class="hero__name-l2">Alexandre</span>
+        </h1>
+        <p class="hero__sub">Netherlands &nbsp;—&nbsp; <span class="hero__status">Open to opportunities</span></p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Get in touch</a>
+          <a href="https://www.linkedin.com/in/luyza-t-alexandre-74ba9617/" target="_blank" rel="noopener" class="btn btn--outline">LinkedIn ↗</a>
+          <a href="https://drive.google.com/file/d/1rkyta44aRv85ohCqflvxnJPnY4Fa9nzq/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn--ghost">Download CV ↗</a>
+        </div>
+      </div>
+
+      <!-- right: network graph visual -->
+      <div class="hero__visual" aria-hidden="true">
+        <svg class="hero__svg" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="nodeFill" cx="50%" cy="50%" r="50%">
+              <stop offset="0%"   stop-color="#1a5ab8"/>
+              <stop offset="100%" stop-color="#0b2348"/>
+            </radialGradient>
+            <radialGradient id="centerFill" cx="50%" cy="50%" r="50%">
+              <stop offset="0%"   stop-color="#1e6acf"/>
+              <stop offset="100%" stop-color="#0d2850"/>
+            </radialGradient>
+            <radialGradient id="glowR" cx="50%" cy="50%" r="50%">
+              <stop offset="0%"   stop-color="#f97316" stop-opacity="0.65"/>
+              <stop offset="55%"  stop-color="#f97316" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+            </radialGradient>
+            <!-- Database: 3 stacked discs (IBM DB2) -->
+            <g id="ic-db">
+              <ellipse cx="0" cy="-7" rx="9" ry="3"/>
+              <ellipse cx="0" cy="0"  rx="9" ry="3"/>
+              <ellipse cx="0" cy="7"  rx="9" ry="3"/>
+            </g>
+            <!-- Cloud: bumpy silhouette (Azure) -->
+            <g id="ic-cloud">
+              <circle cx="-5" cy="-2" r="5"/>
+              <circle cx="1"  cy="-5" r="6"/>
+              <circle cx="7"  cy="-1" r="4"/>
+              <rect   x="-10" y="-2" width="21" height="8" rx="2"/>
+            </g>
+            <!-- Microchip: square body + pins (AI · ML) -->
+            <g id="ic-chip">
+              <rect x="-6"  y="-7"  width="12" height="14" rx="1.5"/>
+              <rect x="-4"  y="-10" width="2.5" height="3.5"/>
+              <rect x="1.5" y="-10" width="2.5" height="3.5"/>
+              <rect x="-4"  y="6.5" width="2.5" height="3.5"/>
+              <rect x="1.5" y="6.5" width="2.5" height="3.5"/>
+              <rect x="-10" y="-4"  width="4"   height="2.5"/>
+              <rect x="-10" y="1.5" width="4"   height="2.5"/>
+              <rect x="6"   y="-4"  width="4"   height="2.5"/>
+              <rect x="6"   y="1.5" width="4"   height="2.5"/>
+            </g>
+            <!-- Funnel / filter bars (Data Eng) -->
+            <g id="ic-flow">
+              <rect x="-9" y="-8" width="18" height="3.5" rx="1.5"/>
+              <rect x="-6" y="-2" width="12" height="3.5" rx="1.5"/>
+              <rect x="-3" y="4"  width="6"  height="3.5" rx="1.5"/>
+            </g>
+            <!-- Clock: ring + hour + minute hands (14+ Yrs) -->
+            <g id="ic-clock">
+              <path fill-rule="evenodd" d="M0,-10 a10,10 0 1,0 0,20 a10,10 0 1,0 0,-20 M0,-7 a7,7 0 1,1 0,14 a7,7 0 1,1 0,-14"/>
+              <rect x="-1"  y="-6" width="2" height="6"  rx="1"/>
+              <rect x="0"   y="-1" width="5" height="2"  rx="1"/>
+              <circle cx="0" cy="0" r="1.5"/>
+            </g>
+            <!-- Building: body + windows + door (NTT Data) -->
+            <g id="ic-bldg">
+              <path fill-rule="evenodd" d="M-9,-11 H9 V8 H-9 Z M-7,-8 H-3 V-5 H-7 Z M1,-8 H5 V-5 H1 Z M-7,-2 H-3 V1 H-7 Z M1,-2 H5 V1 H1 Z M-2,3 H2 V8 H-2 Z"/>
+            </g>
+            <!-- Greek columns: pediment + 3 pillars + base (Nordea Bank) -->
+            <g id="ic-bank">
+              <polygon points="0,-12 -10,-6 10,-6"/>
+              <rect x="-9"   y="-5.5" width="3" height="12.5" rx="0.5"/>
+              <rect x="-1.5" y="-5.5" width="3" height="12.5" rx="0.5"/>
+              <rect x="6"    y="-5.5" width="3" height="12.5" rx="0.5"/>
+              <rect x="-11"  y="7"    width="22" height="3"   rx="0.5"/>
+            </g>
+            <!-- Shield badge: outer + inner cutout (IBM) -->
+            <g id="ic-badge">
+              <path fill-rule="evenodd" d="M0,-11 L10,-7 L10,1 Q10,9 0,12 Q-10,9 -10,1 L-10,-7 Z M0,-7.5 L6.5,-5 L6.5,1 Q6.5,6.5 0,8.5 Q-6.5,6.5 -6.5,1 L-6.5,-5 Z"/>
+            </g>
+            <!-- Central person icon (Luyza) -->
+            <g id="pi-lg">
+              <circle cx="0" cy="-16" r="13"/>
+              <path d="M-17,6 C-17,-6 -7,-9 0,-9 C7,-9 17,-6 17,6 Z"/>
+            </g>
+          </defs>
+
+          <!-- Decorative angle markers -->
+          <text class="sv-deco" x="18" y="352" dominant-baseline="middle">«</text>
+          <text class="sv-deco" x="682" y="352" dominant-baseline="middle" text-anchor="end">»</text>
+
+          <!-- Static connection lines -->
+          <g class="sv-conn-base">
+            <line x1="350" y1="350" x2="350" y2="148"/>
+            <line x1="350" y1="350" x2="524" y2="210"/>
+            <line x1="350" y1="350" x2="568" y2="358"/>
+            <line x1="350" y1="350" x2="485" y2="508"/>
+            <line x1="350" y1="350" x2="145" y2="342"/>
+            <line x1="350" y1="350" x2="215" y2="188"/>
+            <!-- Cross-connections -->
+            <line x1="350" y1="148" x2="524" y2="210"/>
+            <line x1="524" y1="210" x2="568" y2="358"/>
+            <line x1="350" y1="148" x2="215" y2="188"/>
+            <line x1="145" y1="342" x2="215" y2="188"/>
+            <line x1="485" y1="508" x2="350" y2="148" stroke-dasharray="5 7" opacity="0.4"/>
+            <!-- Leaf branches from NTT Data -->
+            <line x1="215" y1="188" x2="95"  y2="112" stroke-dasharray="4 5" opacity="0.6"/>
+            <line x1="215" y1="188" x2="75"  y2="188" stroke-dasharray="4 5" opacity="0.6"/>
+            <line x1="215" y1="188" x2="90"  y2="262" stroke-dasharray="4 5" opacity="0.6"/>
+            <!-- Oracle — direct satellite of central LA node -->
+            <line x1="350" y1="350" x2="210" y2="490"/>
+          </g>
+
+          <!-- Animated connection pulses -->
+          <line class="sv-pulse p1" x1="350" y1="350" x2="350" y2="148"/>
+          <line class="sv-pulse p2" x1="350" y1="350" x2="524" y2="210"/>
+          <line class="sv-pulse p3" x1="350" y1="350" x2="568" y2="358"/>
+          <line class="sv-pulse p4" x1="350" y1="350" x2="485" y2="508"/>
+          <line class="sv-pulse p5" x1="350" y1="350" x2="145" y2="342"/>
+          <line class="sv-pulse p6" x1="350" y1="350" x2="215" y2="188"/>
+          <line class="sv-pulse p7" x1="350" y1="148" x2="524" y2="210"/>
+          <line class="sv-pulse p8" x1="524" y1="210" x2="568" y2="358"/>
+          <!-- Leaf pulses from NTT Data -->
+          <line class="sv-pulse p9"  x1="215" y1="188" x2="95"  y2="112"/>
+          <line class="sv-pulse p10" x1="215" y1="188" x2="90"  y2="262"/>
+          <line class="sv-pulse p12" x1="215" y1="188" x2="75"  y2="188"/>
+          <!-- Oracle leaf pulse — from central LA node -->
+          <line class="sv-pulse p11" x1="350" y1="350" x2="210" y2="490"/>
+
+          <!-- Floating secondary dots -->
+          <circle class="sv-dot d1"  cx="462" cy="108" r="7"/>
+          <circle class="sv-dot d2"  cx="282" cy="115" r="9"/>
+          <circle class="sv-dot d3"  cx="620" cy="150" r="6"/>
+          <circle class="sv-dot d4"  cx="630" cy="436" r="8"/>
+          <circle class="sv-dot d5"  cx="112" cy="465" r="6"/>
+          <circle class="sv-dot d6"  cx="74"  cy="200" r="9"/>
+          <circle class="sv-dot d7"  cx="476" cy="590" r="6"/>
+          <circle class="sv-dot d8"  cx="194" cy="578" r="7"/>
+          <circle class="sv-dot d9"  cx="647" cy="286" r="5"/>
+          <circle class="sv-dot d10" cx="58"  cy="420" r="5"/>
+          <circle class="sv-dot d11" cx="400" cy="80"  r="4"/>
+          <circle class="sv-dot d12" cx="640" cy="540" r="4"/>
+
+          <!-- N1: Top — IBM DB2 -->
+          <circle class="sv-ng"       cx="350" cy="148" r="62" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="350" cy="148" r="50"/>
+          <circle class="sv-nf"       cx="350" cy="148" r="41" fill="url(#nodeFill)"/>
+          <use href="#ic-db" x="350" y="133" class="sv-pi"/>
+          <text class="sv-nlabel" x="350" y="162" text-anchor="middle">IBM DB2</text>
+
+          <!-- N2: Upper-right — Azure -->
+          <circle class="sv-ng"       cx="524" cy="210" r="56" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="524" cy="210" r="44"/>
+          <circle class="sv-nf"       cx="524" cy="210" r="36" fill="url(#nodeFill)"/>
+          <use href="#ic-cloud" x="524" y="196" class="sv-pi"/>
+          <text class="sv-nlabel" x="524" y="224" text-anchor="middle">Azure</text>
+
+          <!-- N3: Right — AI/ML -->
+          <circle class="sv-ng"       cx="568" cy="358" r="58" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="568" cy="358" r="46"/>
+          <circle class="sv-nf"       cx="568" cy="358" r="38" fill="url(#nodeFill)"/>
+          <use href="#ic-chip" x="568" y="344" class="sv-pi"/>
+          <text class="sv-nlabel" x="568" y="372" text-anchor="middle">AI · ML</text>
+
+          <!-- N4: Lower-right — Data Eng -->
+          <circle class="sv-ng"       cx="485" cy="508" r="54" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="485" cy="508" r="42"/>
+          <circle class="sv-nf"       cx="485" cy="508" r="34" fill="url(#nodeFill)"/>
+          <use href="#ic-flow" x="485" y="494" class="sv-pi"/>
+          <text class="sv-nlabel" x="485" y="522" text-anchor="middle">Data Eng</text>
+
+          <!-- N5: Left — 14+ Years -->
+          <circle class="sv-ng"       cx="145" cy="342" r="56" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="145" cy="342" r="44"/>
+          <circle class="sv-nf"       cx="145" cy="342" r="36" fill="url(#nodeFill)"/>
+          <use href="#ic-clock" x="145" y="328" class="sv-pi"/>
+          <text class="sv-nlabel" x="145" y="356" text-anchor="middle">14+ Yrs DBA</text>
+
+          <!-- N6: Upper-left — NTT Data -->
+          <circle class="sv-ng"       cx="215" cy="188" r="52" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="215" cy="188" r="40"/>
+          <circle class="sv-nf"       cx="215" cy="188" r="33" fill="url(#nodeFill)"/>
+          <use href="#ic-bldg" x="215" y="175" class="sv-pi"/>
+          <text class="sv-nlabel" x="215" y="202" text-anchor="middle">NTT Data</text>
+
+          <!-- Leaf: HSBC Bank (child of NTT Data) -->
+          <g class="sv-leaf">
+            <circle class="sv-ng"       cx="75"  cy="188" r="34" fill="url(#glowR)"/>
+            <circle class="sv-nr-outer" cx="75"  cy="188" r="24"/>
+            <circle class="sv-nf"       cx="75"  cy="188" r="18" fill="url(#nodeFill)"/>
+            <use href="#ic-bank" x="75" y="179" class="sv-pi"/>
+            <text class="sv-nlabel" x="75" y="200" text-anchor="middle">HSBC Bank</text>
+          </g>
+
+          <!-- Leaf: Nordea Bank (child of NTT Data) -->
+          <g class="sv-leaf">
+            <circle class="sv-ng"       cx="95"  cy="112" r="34" fill="url(#glowR)"/>
+            <circle class="sv-nr-outer" cx="95"  cy="112" r="24"/>
+            <circle class="sv-nf"       cx="95"  cy="112" r="18" fill="url(#nodeFill)"/>
+            <use href="#ic-bank" x="95" y="103" class="sv-pi"/>
+            <text class="sv-nlabel" x="95" y="124" text-anchor="middle">Nordea Bank</text>
+          </g>
+
+          <!-- Leaf: IBM (child of NTT Data) -->
+          <g class="sv-leaf">
+            <circle class="sv-ng"       cx="90"  cy="262" r="34" fill="url(#glowR)"/>
+            <circle class="sv-nr-outer" cx="90"  cy="262" r="24"/>
+            <circle class="sv-nf"       cx="90"  cy="262" r="18" fill="url(#nodeFill)"/>
+            <use href="#ic-badge" x="90" y="253" class="sv-pi"/>
+            <text class="sv-nlabel" x="90" y="274" text-anchor="middle">IBM</text>
+          </g>
+
+          <!-- Oracle — satellite node, direct child of central LA node -->
+          <circle class="sv-ng"       cx="210" cy="490" r="54" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="210" cy="490" r="42"/>
+          <circle class="sv-nf"       cx="210" cy="490" r="34" fill="url(#nodeFill)"/>
+          <use href="#ic-db" x="210" y="476" class="sv-pi"/>
+          <text class="sv-nlabel" x="210" y="504" text-anchor="middle">Oracle</text>
+
+          <!-- Central node -->
+          <circle class="sv-ng sv-cng"   cx="350" cy="350" r="130" fill="url(#glowR)"/>
+          <circle class="sv-nr sv-cnr2"  cx="350" cy="350" r="92"/>
+          <circle class="sv-nr sv-cnr"   cx="350" cy="350" r="78"/>
+          <circle class="sv-nf sv-cnf"   cx="350" cy="350" r="68" fill="url(#centerFill)"/>
+          <use href="#pi-lg" x="350" y="336" class="sv-pi sv-cpi"/>
+          <text class="sv-clabel" x="350" y="364" text-anchor="middle">LA</text>
+        </svg>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ═══ STATS BAR ═══ -->
+  <div class="statsbar">
+    <div class="statsbar__inner">
+      <div class="statsbar__item">
+        <strong>14+</strong>
+        <span>Years of Experience</span>
+      </div>
+      <div class="statsbar__sep"></div>
+      <div class="statsbar__item">
+        <strong>4</strong>
+        <span>Countries Worked In</span>
+      </div>
+      <div class="statsbar__sep"></div>
+      <div class="statsbar__item">
+        <strong>MBA</strong>
+        <span>Data Science & AI — 2025</span>
+      </div>
+      <div class="statsbar__sep"></div>
+      <div class="statsbar__item">
+        <strong>Azure</strong>
+        <span>Certified</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2 class="section-title">Profile</h2>
+        <div class="about">
+          <div class="about__text">
+            <p>
+              I am a database professional with over 14 years of enterprise experience at global
+              organisations including HSBC Bank, Nordea Bank, and NTT Data Business Solutions. My
+              deep expertise lies in IBM DB2 LUW production environments, system reliability, and
+              large-scale database management across financial services and consulting sectors.
+            </p>
+            <p>
+              Since 2021, I have been actively building a second layer of skills in modern data
+              engineering, cloud computing, and artificial intelligence. I completed an MBA in Data
+              Science & Artificial Intelligence (FIAP, 2025), earned Microsoft Azure certifications,
+              and am working through the Databricks Data Engineer learning path. My aim is a role
+              where deep technical foundations meet modern data infrastructure challenges.
+            </p>
+            <p>
+              I am based in Utrecht and fully committed to a long-term career in the Netherlands.
+              Having lived and worked in four countries — Brazil, Poland, Bulgaria, and the
+              Netherlands — I bring a multicultural perspective that makes me effective in the
+              international, diverse teams that define Dutch tech environments.
+            </p>
+          </div>
+          <div class="about__sidebar">
+            <div class="highlights">
+              <h3 class="highlights__title">Key highlights</h3>
+              <ul class="highlights__list">
+                <li>14+ years enterprise DBA at HSBC, Nordea & NTT Data</li>
+                <li>MBA in Data Science & AI — FIAP (2025)</li>
+                <li>Microsoft Azure Certified (AZ-900 & Data Fundamentals)</li>
+                <li>5 active IBM DB2 LUW certifications</li>
+                <li>Based in Utrecht — permanent resident, NL</li>
+                <li>Trilingual: Portuguese · English · Dutch (learning)</li>
+              </ul>
+            </div>
+            <div class="contact-card">
+              <a href="mailto:alexandre.t.luyza@gmail.com">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                alexandre.t.luyza@gmail.com
+              </a>
+              <a href="tel:+31627995317">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l1.08-.87a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +31 6 27 99 53 17
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hobbies animate">
+          <h4 class="hobbies__label">Interests</h4>
+          <div class="tags">
+            <span>Photography</span><span>Poetry</span><span>Kayaking</span>
+            <span>Camping</span><span>Painting</span><span>Art</span><span>New Cultures</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ EXPERIENCE ═══ -->
+    <section id="experience" class="section section--alt">
+      <div class="wrap">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+
+          <div class="exp animate">
+            <div class="exp__line">
+              <div class="exp__dot exp__dot--current"></div>
+            </div>
+            <div class="exp__card">
+              <div class="exp__header">
+                <div>
+                  <h3 class="exp__company">NTT Data Business Solutions</h3>
+                  <p class="exp__role">Database Consultant &nbsp;·&nbsp; Utrecht, Netherlands</p>
+                </div>
+                <div class="exp__right">
+                  <span class="exp__period">2021 — Present</span>
+                  <span class="exp__badge">Current</span>
+                </div>
+              </div>
+              <p class="exp__desc">
+                Supporting SAP DB2/DB6 production databases in a cross-country team across the
+                Netherlands, Germany, Mexico, and India. Primary technical contact for database
+                reliability, performance, and escalation in large-scale enterprise SAP environments.
+              </p>
+              <div class="tags">
+                <span>DB2 LUW</span><span>SAP DB6</span><span>Production Support</span><span>International Teams</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp animate">
+            <div class="exp__line">
+              <div class="exp__dot"></div>
+            </div>
+            <div class="exp__card">
+              <div class="exp__header">
+                <div>
+                  <h3 class="exp__company">Nordea Bank</h3>
+                  <p class="exp__role">Senior Database Administrator &nbsp;·&nbsp; Warsaw, Poland</p>
+                </div>
+                <span class="exp__period">2018 — 2021</span>
+              </div>
+              <p class="exp__desc">
+                DB2 production and development database support for a pan-Scandinavian banking group
+                (Poland, Finland, Sweden, Denmark). Led DB2 LUW maintenance, upgrades, fixpacking,
+                and audit implementation. Primary technical contact for all database projects.
+              </p>
+              <div class="tags">
+                <span>DB2 LUW</span><span>Banking</span><span>Upgrades</span><span>Audit</span><span>ITIL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp animate">
+            <div class="exp__line">
+              <div class="exp__dot"></div>
+            </div>
+            <div class="exp__card">
+              <div class="exp__header">
+                <div>
+                  <h3 class="exp__company">HSBC Bank</h3>
+                  <p class="exp__role">Senior Database Administrator &nbsp;·&nbsp; São Paulo, Brazil</p>
+                </div>
+                <span class="exp__period">2013 — 2015</span>
+              </div>
+              <p class="exp__desc">
+                Member of a 24/7 global DB2 LUW production support rotation across US, UK, Brazil,
+                India, and China. Responsible for incident management, troubleshooting, backup and
+                recovery, change management, and root cause analysis for global banking infrastructure.
+              </p>
+              <div class="tags">
+                <span>DB2 LUW</span><span>24/7 Operations</span><span>Global Banking</span><span>ITIL</span><span>Incident Management</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp__more animate">
+            Additional experience in Brazil 2008–2013 &nbsp;—&nbsp;
+            <a href="https://www.linkedin.com/in/luyza-t-alexandre-74ba9617/" target="_blank" rel="noopener">full history on LinkedIn ↗</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section id="skills" class="section">
+      <div class="wrap">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+
+          <div class="skill-group animate">
+            <h4 class="skill-group__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+              Database
+            </h4>
+            <div class="tags">
+              <span class="tag--strong">IBM DB2 LUW</span>
+              <span class="tag--strong">SQL — Advanced</span>
+              <span>Oracle</span>
+              <span>SAP DB6</span>
+              <span>SQL Server / Azure SQL</span>
+              <span>Performance Tuning</span>
+              <span>HA / DR</span>
+              <span>Production Support</span>
+            </div>
+          </div>
+
+          <div class="skill-group animate">
+            <h4 class="skill-group__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Data Engineering
+            </h4>
+            <div class="tags">
+              <span class="tag--strong">Databricks</span>
+              <span class="tag--strong">Azure Data Factory</span>
+              <span>Azure Synapse</span>
+              <span>ETL / ELT Pipelines</span>
+              <span>Python</span>
+              <span>Power BI</span>
+              <span>Supabase</span>
+            </div>
+          </div>
+
+          <div class="skill-group animate">
+            <h4 class="skill-group__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              Data Science & AI
+            </h4>
+            <div class="tags">
+              <span class="tag--strong">Exploratory Data Analysis</span>
+              <span>Machine Learning</span>
+              <span>Azure AI</span>
+              <span>OpenAI Services</span>
+              <span>Python · Pandas · NumPy</span>
+              <span>Statistical Analysis</span>
+            </div>
+          </div>
+
+          <div class="skill-group animate">
+            <h4 class="skill-group__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              Cloud & Tools
+            </h4>
+            <div class="tags">
+              <span class="tag--strong">Microsoft Azure</span>
+              <span>AZ-900 Certified</span>
+              <span>Data Fundamentals Certified</span>
+              <span>AZ-104 Trained</span>
+              <span>ITIL Foundations</span>
+              <span>Git</span>
+            </div>
+          </div>
+
+          <div class="skill-group animate">
+            <h4 class="skill-group__title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Soft Skills
+            </h4>
+            <div class="tags">
+              <span>Customer Orientation</span>
+              <span>Curiosity &amp; Continuous Learning</span>
+              <span>Commitment</span>
+              <span>Strategic Thinking &amp; Initiative</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROJECTS ═══ -->
+    <section id="projects" class="section section--alt">
+      <div class="wrap">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="projects-grid">
+
+          <div class="project-card project-card--featured animate">
+            <div class="project-card__top">
+              <span class="project-card__label">Geospatial · Data Visualization · Civic Tech</span>
+              <a href="https://brasil-em-jogo-indigenas.vercel.app/" target="_blank" rel="noopener" class="project-card__link">View live ↗</a>
+            </div>
+            <h3 class="project-card__title">Brasil em Jogo — Povos Indígenas</h3>
+            <p class="project-card__desc">
+              Interactive geospatial platform mapping indigenous territories and villages across
+              Brazil, built on official FUNAI and IBGE government data. Features territory and
+              village visualization, a historical rights timeline from colonization to the 2022
+              Census, and full bilingual (PT/EN) navigation.
+            </p>
+            <div class="tags project-card__tech">
+              <span>Supabase</span><span>Vercel</span><span>Interactive Mapping</span><span>FUNAI / IBGE</span>
+            </div>
+          </div>
+
+          <div class="project-card animate">
+            <div class="project-card__top">
+              <span class="project-card__label">AI Ethics · Content</span>
+              <a href="https://www.instagram.com/aially_ethics/" target="_blank" rel="noopener" class="project-card__link">Instagram ↗</a>
+            </div>
+            <h3 class="project-card__title">AI Ally Ethics</h3>
+            <p class="project-card__desc">
+              Public platform communicating AI ethics, governance, and responsible innovation
+              to a broad audience — translating technical complexity into accessible content.
+            </p>
+            <div class="tags project-card__tech">
+              <span>AI Ethics</span><span>Science Communication</span>
+            </div>
+          </div>
+
+          <div class="project-card animate">
+            <div class="project-card__top">
+              <span class="project-card__label">Enterprise Database · Production · Cross-country</span>
+            </div>
+            <h3 class="project-card__title">DB2 LUW Major Version Upgrade — 10.5 to 11.5</h3>
+            <p class="project-card__desc">
+              Technical leader for a mission-critical DB2 LUW upgrade spanning production
+              environments across Mexico, the Netherlands, Germany, and India. Designed the
+              upgrade procedure, coordinated distributed teams across time zones, and delivered
+              with zero critical downtime in a HADR (High Availability Disaster Recovery)
+              production environment.
+            </p>
+            <div class="tags project-card__tech">
+              <span>IBM DB2</span><span>HADR</span><span>Version Upgrade</span><span>Multi-country</span><span>Production DBA</span>
+            </div>
+          </div>
+
+          <div class="project-card animate">
+            <div class="project-card__top">
+              <span class="project-card__label">Fintech · Machine Learning · MBA</span>
+              <a href="https://github.com/LuyzaTA/fiapmba-quantum/" target="_blank" rel="noopener" class="project-card__link">GitHub ↗</a>
+            </div>
+            <h3 class="project-card__title">Quantum Finance</h3>
+            <p class="project-card__desc">
+              End-to-end data science solution for a fintech use case: exploratory data
+              analysis, supervised ML modeling, and AI-driven recommendations applied to
+              a real financial domain. Developed as part of the FIAP MBA programme.
+            </p>
+            <div class="tags project-card__tech">
+              <span>Python</span><span>Machine Learning</span><span>EDA</span><span>Fintech</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CREDENTIALS ═══ -->
+    <section id="credentials" class="section">
+      <div class="wrap">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="credentials">
+
+          <div class="cred-panel animate">
+            <h3 class="cred-panel__title">Education</h3>
+            <div class="edu-list">
+              <div class="edu-item edu-item--featured">
+                <div class="edu-item__year">2023 — 2025</div>
+                <div class="edu-item__content">
+                  <h4>MBA in Data Science & Artificial Intelligence</h4>
+                  <p>FIAP · Brazil</p>
+                  <p class="edu-item__note">Applied fintech project (Quantum Finance) · Leading Technology Transformation · Disruptive Innovation & Mindset</p>
+                </div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-item__year">2009 — 2010</div>
+                <div class="edu-item__content">
+                  <h4>Postgraduate: Database Administration</h4>
+                  <p>DB2 & Oracle specialisation</p>
+                </div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-item__year">2006 — 2009</div>
+                <div class="edu-item__content">
+                  <h4>B.S. Computer Information Systems</h4>
+                </div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-item__year">2013</div>
+                <div class="edu-item__content">
+                  <h4>English for Academic Purposes — ESL</h4>
+                  <p>Silicon Valley, California · USA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cred-panel animate">
+            <h3 class="cred-panel__title">Certifications</h3>
+
+            <div class="cert-section">
+              <p class="cert-section__label">Cloud · Microsoft Azure</p>
+              <ul>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> Azure Fundamentals (AZ-900)</li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> Azure Data Fundamentals</li>
+                <li class="cert cert--wip"><span class="cert__icon">→</span> Azure Administrator AZ-104 — training completed</li>
+                <li class="cert cert--wip"><span class="cert__icon">→</span> Azure Data Infrastructure DP-305 — training completed</li>
+              </ul>
+            </div>
+
+            <div class="cert-section">
+              <p class="cert-section__label">IBM DB2</p>
+              <ul>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> DB2 LUW V11.x Advanced DBA (Badge)</li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> DB2 LUW V11.x DBA (Badge)</li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> IBM Certified DB2 Database Associate (000-730)</li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> IBM Certified DB2 LUW DBA (000-731)</li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> IBM Certified DB2 LUW 10 Associate (000-610)</li>
+              </ul>
+            </div>
+
+            <div class="cert-section">
+              <p class="cert-section__label">Data Engineering & Other</p>
+              <ul>
+                <li class="cert cert--wip"><span class="cert__icon">→</span> Databricks Data Engineer path — ongoing</li>
+                <li class="cert cert--wip"><span class="cert__icon">→</span> Azure SQL + Power BI — 98h course — ongoing</li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> Data Engineering Fundamentals — IBM EDX</li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> ITIL Foundations</li>
+                <li class="cert cert--done"><span class="cert__icon">✓</span> Azure AI & OpenAI Services — 20h</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ REFERENCES ═══ -->
+    <section id="references" class="section">
+      <div class="wrap">
+        <h2 class="section-title">References</h2>
+        <div class="refs-grid">
+
+          <div class="ref-card animate">
+            <div class="ref-card__body">
+              <strong class="ref-card__name">Patricia Andrade Bueno</strong>
+              <span class="ref-card__role">Andrade e Bueno Treinamentos</span>
+              <a href="tel:+554184282503" class="ref-card__phone">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l1.08-.87a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +55 41 8428-2503
+              </a>
+            </div>
+          </div>
+
+          <div class="ref-card animate">
+            <div class="ref-card__body">
+              <strong class="ref-card__name">Tapio Vaattanen</strong>
+              <span class="ref-card__role">Nordea Bank</span>
+              <a href="tel:+14164327184" class="ref-card__phone">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l1.08-.87a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +1 (416) 432-7184
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact" class="contact">
+      <div class="wrap contact__inner">
+        <div class="contact__text">
+          <p class="contact__eyebrow">Get in touch</p>
+          <h2 class="contact__title">Let's work together<br>in the Netherlands.</h2>
+          <p class="contact__sub">
+            Actively looking for data engineering and data science roles across the Netherlands.
+          </p>
+        </div>
+        <div class="contact__links animate">
+          <a href="mailto:alexandre.t.luyza@gmail.com" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>
+              <strong>Email</strong>
+              alexandre.t.luyza@gmail.com
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/luyza-t-alexandre-74ba9617/" target="_blank" rel="noopener" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>
+              <strong>LinkedIn</strong>
+              luyza-t-alexandre
+            </span>
+          </a>
+          <a href="tel:+31627995317" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l1.08-.87a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>
+              <strong>Phone</strong>
+              +31 6 27 99 53 17
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© 2026 Luyza Alexandre &nbsp;·&nbsp; Utrecht, Netherlands</p>
+      <nav>
+        <a href="https://www.linkedin.com/in/luyza-t-alexandre-74ba9617/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/aially_ethics/" target="_blank" rel="noopener">@aially_ethics</a>
+        <a href="https://brasil-em-jogo-indigenas.vercel.app/" target="_blank" rel="noopener">Brasil em Jogo</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

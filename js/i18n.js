@@ -112,6 +112,7 @@
       'cert.itil':          'ITIL Foundations',
       'cert.azureai':       'Azure AI & OpenAI Services — 20h',
 
+      'rec.title':  'Recommendations',
       'refs.title': 'References',
 
       'contact.eyebrow':       'Get in touch',
@@ -234,6 +235,7 @@
       'cert.itil':          'ITIL Foundations',
       'cert.azureai':       'Azure AI & OpenAI Services — 20h',
 
+      'rec.title':  'Recomendações',
       'refs.title': 'Referências',
 
       'contact.eyebrow':       'Entre em contato',
@@ -356,6 +358,7 @@
       'cert.itil':          'ITIL Foundations',
       'cert.azureai':       'Azure AI & OpenAI Services — 20u',
 
+      'rec.title':  'Aanbevelingen',
       'refs.title': 'Referenties',
 
       'contact.eyebrow':       'Neem contact op',

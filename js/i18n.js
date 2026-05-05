@@ -78,6 +78,11 @@
       'proj.qf.title':     'Quantum Finance',
       'proj.qf.desc':      'End-to-end data science solution for a fintech use case: exploratory data analysis, supervised ML modeling, and AI-driven recommendations applied to a real financial domain. Developed as part of the FIAP MBA programme.',
 
+      'proj.phil.label':   'Philosophy · Web App · Personal Project',
+      'proj.phil.link':    'View live ↗',
+      'proj.phil.title':   'Philosphere',
+      'proj.phil.desc':    'An interactive web platform exploring philosophical ideas, thought experiments, and thinkers. Designed to make philosophy accessible and engaging for a broad audience through a clean, modern interface.',
+
       'cred.title':         'Education & Certifications',
       'cred.education':     'Education',
       'cred.certifications':'Certifications',
@@ -195,6 +200,11 @@
       'proj.qf.title':     'Quantum Finance',
       'proj.qf.desc':      'Solução de ciência de dados ponta a ponta para um caso de uso fintech: análise exploratória de dados, modelagem de ML supervisionado e recomendações baseadas em IA aplicadas a um domínio financeiro real. Desenvolvido como parte do programa MBA da FIAP.',
 
+      'proj.phil.label':   'Filosofia · Aplicação Web · Projeto Pessoal',
+      'proj.phil.link':    'Ver projeto ↗',
+      'proj.phil.title':   'Philosphere',
+      'proj.phil.desc':    'Plataforma web interativa explorando ideias filosóficas, experimentos mentais e pensadores. Projetada para tornar a filosofia acessível e envolvente para um público amplo, por meio de uma interface limpa e moderna.',
+
       'cred.title':         'Educação & Certificações',
       'cred.education':     'Educação',
       'cred.certifications':'Certificações',
@@ -311,6 +321,11 @@
       'proj.qf.link':      'GitHub ↗',
       'proj.qf.title':     'Quantum Finance',
       'proj.qf.desc':      'End-to-end data science oplossing voor een fintech use case: verkennende data-analyse, gesuperviseerde ML-modellering en AI-gestuurde aanbevelingen toegepast op een echt financieel domein. Ontwikkeld als onderdeel van het FIAP MBA-programma.',
+
+      'proj.phil.label':   'Filosofie · Web App · Persoonlijk Project',
+      'proj.phil.link':    'Bekijk live ↗',
+      'proj.phil.title':   'Philosphere',
+      'proj.phil.desc':    'Een interactief webplatform dat filosofische ideeën, gedachte-experimenten en denkers verkent. Ontworpen om filosofie toegankelijk en boeiend te maken voor een breed publiek via een strakke, moderne interface.',
 
       'cred.title':         'Opleiding & Certificeringen',
       'cred.education':     'Opleiding',

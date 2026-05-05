@@ -69,6 +69,10 @@
       'proj.db2.label':    'Enterprise Database · Production · Cross-country',
       'proj.db2.title':    'DB2 LUW Major Version Upgrade — 10.5 to 11.5',
       'proj.db2.desc':     'Technical leader for a mission-critical DB2 LUW upgrade spanning production environments across Mexico, the Netherlands, Germany, and India. Designed the upgrade procedure, coordinated distributed teams across time zones, and delivered with zero critical downtime in a HADR (High Availability Disaster Recovery) production environment.',
+      'proj.audit.label':  'Enterprise Database · Audit & Compliance · Banking',
+      'proj.audit.title':  'DB2 LUW Audit — Design & Implementation',
+      'proj.audit.desc':   'Technical owner of the end-to-end design and implementation of a DB2 LUW Audit solution at Nordea Bank, across a multinational environment spanning Poland, Finland, Sweden, and Denmark. Combined deep DB2 LUW expertise with compliance requirements to enhance audit capabilities while maintaining data integrity and security in production environments.',
+
       'proj.qf.label':     'Fintech · Machine Learning · MBA',
       'proj.qf.link':      'Notebooks ↗',
       'proj.qf.title':     'Quantum Finance',
@@ -187,6 +191,10 @@
       'proj.db2.label':    'Banco de Dados Corporativo · Produção · Multinacional',
       'proj.db2.title':    'Upgrade DB2 LUW Versão Principal — 10.5 para 11.5',
       'proj.db2.desc':     'Líder técnica em um upgrade crítico do DB2 LUW abrangendo ambientes de produção no México, Países Baixos, Alemanha e Índia. Projetou o procedimento de upgrade, coordenou equipes distribuídas em diferentes fusos horários e entregou com zero tempo de inatividade crítico em um ambiente de produção HADR (High Availability Disaster Recovery).',
+      'proj.audit.label':  'Banco de Dados Corporativo · Auditoria & Conformidade · Banking',
+      'proj.audit.title':  'DB2 LUW Auditoria — Design & Implementação',
+      'proj.audit.desc':   'Responsável técnica pelo design e implementação ponta a ponta de uma solução de auditoria DB2 LUW no Nordea Bank, em um ambiente multinacional abrangendo Polônia, Finlândia, Suécia e Dinamarca. Combinou profundo conhecimento em DB2 LUW com requisitos de conformidade para aprimorar capacidades de auditoria, mantendo integridade dos dados e segurança em produção.',
+
       'proj.qf.label':     'Fintech · Aprendizado de Máquina · MBA',
       'proj.qf.link':      'Notebooks ↗',
       'proj.qf.title':     'Quantum Finance',
@@ -305,6 +313,10 @@
       'proj.db2.label':    'Enterprise Database · Productie · Internationaal',
       'proj.db2.title':    'DB2 LUW Grote Versie-upgrade — 10.5 naar 11.5',
       'proj.db2.desc':     'Technisch leider voor een bedrijfskritische DB2 LUW-upgrade over productieomgevingen in Mexico, Nederland, Duitsland en India. Ontwierp de upgradeprocedure, coördineerde gedistribueerde teams in verschillende tijdzones en leverde met nul kritieke downtime in een HADR (High Availability Disaster Recovery) productieomgeving.',
+      'proj.audit.label':  'Enterprise Database · Audit & Compliance · Banking',
+      'proj.audit.title':  'DB2 LUW Audit — Ontwerp & Implementatie',
+      'proj.audit.desc':   'Technisch verantwoordelijk voor het end-to-end ontwerp en de implementatie van een DB2 LUW Audit-oplossing bij Nordea Bank, in een multinationale omgeving in Polen, Finland, Zweden en Denemarken. Combineerde diepgaande DB2 LUW-expertise met compliance-vereisten om auditcapaciteiten te verbeteren met behoud van data-integriteit en beveiliging in productieomgevingen.',
+
       'proj.qf.label':     'Fintech · Machine Learning · MBA',
       'proj.qf.link':      'Notebooks ↗',
       'proj.qf.title':     'Quantum Finance',

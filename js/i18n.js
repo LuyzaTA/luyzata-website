@@ -113,6 +113,23 @@
       'cert.azureai':       'Azure AI & OpenAI Services — 20h',
 
       'rec.title':  'Recommendations',
+
+      'rec.tapio.role': 'Database Reliability Engineering Team Lead @ Nordcloud',
+      'rec.tapio.date': 'February 2026 · worked together at Nordea Bank',
+      'rec.tapio.text': 'I had the pleasure of working closely with Luyza at Nordea from 2018 to 2021, where we collaborated on several critical Db2 initiatives in a multinational environment spanning teams in Poland, Finland, Sweden, and Denmark.<br><br>One standout contribution was her work on the Db2 Audit project, where Luyza took ownership of designing and implementing the solution end-to-end. Her technical expertise in DB2 LUW, combined with a deep understanding of compliance requirements, ensured the project was delivered successfully, enhancing our audit capabilities while maintaining high standards of data integrity and security in production environments.<br><br>Beyond her strong technical skills — spanning maintenance (backups, restores, runstats, reorgs), HADR, replication, and advanced recovery — Luyza consistently demonstrated professionalism, reliability, and a calm, approachable demeanor that made her a true team player. She was always genuine, supportive, and focused on delivering quality work, even under tight deadlines or complex incidents.<br><br>Luyza is an exceptional DBA who brings both expertise and a positive attitude to every project. I highly recommend her for any role involving Db2 administration, database projects, or cross-functional team environments — she would be a valuable asset to any organization.',
+
+      'rec.hans.role': 'Db2 for SAP Development @ IBM Deutschland Research & Development GmbH',
+      'rec.hans.date': 'January 2026 · worked with Luyza at different companies',
+      'rec.hans.text': 'I had the pleasure of working with Luyza on a large and highly complex joint project, in which she proved to be an exceptionally skilled and dedicated expert in both SAP and Db2. Her contributions were critical to the success of this project, which involved a huge SAP on Db2 landscape with many very large databases. This landscape had previously been moved from an AIX-based, on-premises environment to Linux on a major hyperscaler. In addition to handling daily Db2 operations and optimization, Luyza planned and managed a successful major Db2 version upgrade for the many Db2 databases in this complex landscape. This project also included Db2 HADR and Pacemaker cluster automation, which added to the overall complexity. The successful completion of the upgrades on time is a perfect proof point of Luyza\'s professionalism and her excellent skills in SAP and Db2. I enjoyed working with Luyza and highly value her expertise and her team spirit.',
+
+      'rec.regina.role': 'Professor of Statistics · MBA Data Science & AI (FIAP) · Survey Methodologist',
+      'rec.regina.date': 'February 2025 · Regina was Luyza\'s teacher',
+      'rec.regina.text': 'Luyza was my student in the Applied Statistics course within the MBA Data Science & Artificial Intelligence — FIAP. Throughout nine classes, she constantly stood out due to her regular attendance and active participation, both in theoretical lectures and hands-on practical exercises. Luyza demonstrated strong execution skills, supported by a solid foundation in Python and Statistics. She is a curious and proactive professional, always eager to learn more and expand her knowledge — an essential quality for a data scientist. Beyond her technical abilities, Luyza exhibits a high level of dedication and commitment to learning, which undoubtedly makes her an excellent candidate for any position in the Data Science field. I confidently recommend her for any opportunities in this area.',
+
+      'rec.dennis.role': 'Oracle DBA Sênior · RAC | Data Guard | RMAN | Performance Tuning',
+      'rec.dennis.date': 'January 2025 · Dennis was Luyza\'s mentor',
+      'rec.dennis.text': 'I had the pleasure of working with Luyza on a university project and exchanging valuable experiences in the professional environment as well. She has extensive knowledge in database administration and shows a great passion for data-related fields, such as Data Engineering and Data Science. Currently, she is specializing in Data Science, continuously investing in her development.',
+
       'refs.title': 'References',
 
       'contact.eyebrow':       'Get in touch',
@@ -236,6 +253,23 @@
       'cert.azureai':       'Azure AI & OpenAI Services — 20h',
 
       'rec.title':  'Recomendações',
+
+      'rec.tapio.role': 'Database Reliability Engineering Team Lead @ Nordcloud',
+      'rec.tapio.date': 'Fevereiro 2026 · trabalharam juntos no Nordea Bank',
+      'rec.tapio.text': 'Tive o prazer de trabalhar de perto com Luyza no Nordea de 2018 a 2021, onde colaboramos em diversas iniciativas críticas de Db2 em um ambiente multinacional abrangendo equipes na Polônia, Finlândia, Suécia e Dinamarca.<br><br>Uma contribuição marcante foi seu trabalho no projeto de Auditoria Db2, onde Luyza assumiu a responsabilidade pelo design e implementação da solução de ponta a ponta. Sua expertise técnica em DB2 LUW, combinada com um profundo entendimento dos requisitos de conformidade, garantiu que o projeto fosse entregue com sucesso, aprimorando nossas capacidades de auditoria e mantendo altos padrões de integridade de dados e segurança nos ambientes de produção.<br><br>Além de suas fortes habilidades técnicas — abrangendo manutenção (backups, restores, runstats, reorgs), HADR, replicação e recuperação avançada — Luyza demonstrou consistentemente profissionalismo, confiabilidade e uma postura calma e acessível que a tornava uma verdadeira jogadora de equipe. Ela sempre foi genuína, solidária e focada em entregar trabalho de qualidade, mesmo sob prazos apertados ou incidentes complexos.<br><br>Luyza é uma DBA excepcional que traz expertise e uma atitude positiva para cada projeto. Recomendo-a de forma efusiva para qualquer função envolvendo administração de Db2, projetos de banco de dados ou ambientes de equipe multifuncionais — ela seria um recurso valioso para qualquer organização.',
+
+      'rec.hans.role': 'Db2 para Desenvolvimento SAP @ IBM Deutschland Research & Development GmbH',
+      'rec.hans.date': 'Janeiro 2026 · trabalharam em empresas diferentes',
+      'rec.hans.text': 'Tive o prazer de trabalhar com Luyza em um projeto conjunto grande e altamente complexo, no qual ela provou ser uma especialista excepcionalmente qualificada e dedicada em SAP e Db2. Suas contribuições foram críticas para o sucesso deste projeto, que envolvia uma enorme paisagem SAP no Db2 com muitos bancos de dados muito grandes. Esta paisagem havia sido migrada anteriormente de um ambiente AIX on-premises para Linux em um grande hyperscaler. Além de lidar com as operações e otimizações diárias do Db2, Luyza planejou e gerenciou um upgrade de versão principal bem-sucedido do Db2 para os muitos bancos de dados nesta paisagem complexa. Este projeto também incluiu HADR do Db2 e automação de cluster Pacemaker, o que aumentou a complexidade geral. A conclusão bem-sucedida dos upgrades no prazo é uma prova perfeita do profissionalismo de Luyza e de suas excelentes habilidades em SAP e Db2. Gostei de trabalhar com Luyza e valorizo muito sua expertise e seu espírito de equipe.',
+
+      'rec.regina.role': 'Professora de Estatística · MBA Ciência de Dados & IA (FIAP) · Metodologista de Pesquisa',
+      'rec.regina.date': 'Fevereiro 2025 · Regina foi professora de Luyza',
+      'rec.regina.text': 'Luyza foi minha aluna na disciplina de Applied Statistics do MBA Data Science & Artificial Intelligence da FIAP. Ao longo das 9 aulas da disciplina, ela se destacou pela sua presença constante e participação ativa, tanto nas aulas teóricas quanto nos exercícios práticos (hands-on). Luyza demonstrou excelentes habilidades de execução, combinadas com um sólido conhecimento em Python e Estatística. Ela é uma profissional curiosa, sempre buscando aprender mais e aprimorar seus conhecimentos, uma característica fundamental para um cientista de dados. Além de suas habilidades técnicas, Luyza tem uma grande dedicação e um compromisso com o aprendizado que, sem dúvida, a torna uma excelente candidata para atuar na área de Ciência de Dados. Recomendo-a com confiança para qualquer oportunidade nessa área.',
+
+      'rec.dennis.role': 'Oracle DBA Sênior · RAC | Data Guard | RMAN | Performance Tuning',
+      'rec.dennis.date': 'Janeiro 2025 · Dennis foi mentor de Luyza',
+      'rec.dennis.text': 'Tive o prazer de trabalhar com Luyza em um projeto universitário e de trocar experiências valiosas no ambiente profissional também. Ela tem um amplo conhecimento em administração de banco de dados e demonstra grande paixão pelas áreas relacionadas a dados, como Engenharia de Dados e Ciência de Dados. Atualmente, está se especializando em Ciência de Dados, investindo continuamente em seu desenvolvimento.',
+
       'refs.title': 'Referências',
 
       'contact.eyebrow':       'Entre em contato',
@@ -359,6 +393,23 @@
       'cert.azureai':       'Azure AI & OpenAI Services — 20u',
 
       'rec.title':  'Aanbevelingen',
+
+      'rec.tapio.role': 'Database Reliability Engineering Team Lead @ Nordcloud',
+      'rec.tapio.date': 'Februari 2026 · samen gewerkt bij Nordea Bank',
+      'rec.tapio.text': 'Ik had het genoegen nauw samen te werken met Luyza bij Nordea van 2018 tot 2021, waar we samenwerkten aan verschillende kritieke Db2-initiatieven in een multinationaal team met Polen, Finland, Zweden en Denemarken.<br><br>Een opvallende bijdrage was haar werk aan het Db2 Audit-project, waarbij Luyza verantwoordelijkheid nam voor het end-to-end ontwerp en de implementatie van de oplossing. Haar technische expertise in DB2 LUW, gecombineerd met een diep begrip van compliance-vereisten, zorgde ervoor dat het project succesvol werd opgeleverd, onze auditcapaciteiten werden verbeterd en hoge standaarden voor gegevensintegriteit en beveiliging in productieomgevingen werden gehandhaafd.<br><br>Naast haar sterke technische vaardigheden — waaronder onderhoud (back-ups, herstel, runstats, reorgs), HADR, replicatie en geavanceerd herstel — toonde Luyza consistent professionaliteit, betrouwbaarheid en een rustige, toegankelijke houding die haar een echte teamspeler maakte. Ze was altijd oprecht, ondersteunend en gefocust op het leveren van kwaliteitswerk, zelfs onder krappe deadlines of complexe incidenten.<br><br>Luyza is een uitzonderlijke DBA die zowel expertise als een positieve houding meebrengt naar elk project. Ik beveel haar ten zeerste aan voor elke rol met betrekking tot Db2-beheer, databaseprojecten of cross-functionele teamomgevingen — ze zou een waardevolle aanwinst zijn voor elke organisatie.',
+
+      'rec.hans.role': 'Db2 voor SAP-ontwikkeling @ IBM Deutschland Research & Development GmbH',
+      'rec.hans.date': 'Januari 2026 · werkten bij verschillende bedrijven',
+      'rec.hans.text': 'Ik had het genoegen om met Luyza te werken aan een groot en zeer complex gezamenlijk project, waarbij ze bewees een uitzonderlijk bekwame en toegewijde expert te zijn in zowel SAP als Db2. Haar bijdragen waren cruciaal voor het succes van dit project, dat een enorm SAP op Db2-landschap omvatte met veel zeer grote databases. Dit landschap was eerder verplaatst van een AIX-gebaseerde on-premises omgeving naar Linux op een grote hyperscaler. Naast het uitvoeren van dagelijkse Db2-operaties en -optimalisaties, plande en beheerde Luyza een succesvolle grote Db2-versie-upgrade voor de vele Db2-databases in dit complexe landschap. Dit project omvatte ook Db2 HADR en Pacemaker clusterautomatisering, wat de algehele complexiteit vergrootte. De succesvolle afronding van de upgrades op tijd is een perfect bewijs van Luyza\'s professionaliteit en haar uitstekende vaardigheden in SAP en Db2. Ik werkte graag samen met Luyza en waardeer haar expertise en teamgeest.',
+
+      'rec.regina.role': 'Professor Statistiek · MBA Data Science & AI (FIAP) · Onderzoeksmethodoloog',
+      'rec.regina.date': 'Februari 2025 · Regina was de docent van Luyza',
+      'rec.regina.text': 'Luyza was mijn studente in de cursus Applied Statistics binnen de MBA Data Science & Artificial Intelligence — FIAP. Gedurende negen lessen viel ze consequent op door haar regelmatige aanwezigheid en actieve participatie, zowel in theoretische colleges als in hands-on praktische oefeningen. Luyza toonde sterke uitvoeringsvaardigheden, ondersteund door een solide basis in Python en Statistiek. Ze is een nieuwsgierige en proactieve professional, altijd bereid om meer te leren en haar kennis uit te breiden — een essentiële kwaliteit voor een data scientist. Naast haar technische vaardigheden vertoont Luyza een hoog niveau van toewijding en inzet voor leren, wat haar ongetwijfeld een uitstekende kandidaat maakt voor elke positie in het Data Science-vakgebied. Ik beveel haar vol vertrouwen aan voor elke kans in dit gebied.',
+
+      'rec.dennis.role': 'Oracle DBA Sênior · RAC | Data Guard | RMAN | Performance Tuning',
+      'rec.dennis.date': 'Januari 2025 · Dennis was de mentor van Luyza',
+      'rec.dennis.text': 'Ik had het genoegen om met Luyza samen te werken aan een universitair project en ook waardevolle ervaringen uit te wisselen in de professionele omgeving. Ze heeft uitgebreide kennis van databasebeheer en toont een grote passie voor datagerelateerde vakgebieden, zoals Data Engineering en Data Science. Momenteel specialiseert ze zich in Data Science en blijft ze continu investeren in haar ontwikkeling.',
+
       'refs.title': 'Referenties',
 
       'contact.eyebrow':       'Neem contact op',

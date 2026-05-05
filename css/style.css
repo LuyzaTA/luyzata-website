@@ -1321,7 +1321,6 @@ body {
   flex-direction: column;
   gap: 1rem;
   box-shadow: var(--shadow-sm);
-  position: relative;
   transition: box-shadow 0.25s, transform 0.25s;
 }
 
@@ -1330,36 +1329,23 @@ body {
   transform: translateY(-2px);
 }
 
-.rec-card__quote {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  width: 28px;
-  height: 28px;
-  color: var(--accent);
-  opacity: 0.2;
-  flex-shrink: 0;
-}
-
 .rec-card__text {
   font-size: 0.86rem;
   color: #4b5563;
   line-height: 1.85;
-  flex: 1;
 }
 
 .rec-card__author {
   display: flex;
   align-items: center;
   gap: 0.875rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border);
-  margin-top: auto;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
 }
 
 .rec-card__avatar {
-  width: 46px;
-  height: 46px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background: var(--navy);
   color: #fff;
@@ -1370,6 +1356,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .rec-card__avatar img {

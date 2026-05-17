@@ -61,7 +61,8 @@
       'skills.cloud':    'Cloud & Tools',
       'skills.soft':     'Soft Skills',
 
-      'projects.title':    'Selected Projects',
+      'projects.title':       'Selected Projects',
+      'proj.personal.badge':  'Personal Project',
       'proj.bej.label':    'Geospatial · Data Visualization · Civic Tech',
       'proj.bej.link':     'View live ↗',
       'proj.bej.title':    'Brasil em Jogo — Povos Indígenas',
@@ -206,7 +207,8 @@
       'skills.cloud':    'Cloud & Ferramentas',
       'skills.soft':     'Habilidades Interpessoais',
 
-      'projects.title':    'Projetos Selecionados',
+      'projects.title':       'Projetos Selecionados',
+      'proj.personal.badge':  'Projeto Pessoal',
       'proj.bej.label':    'Geoespacial · Visualização de Dados · Tecnologia Cívica',
       'proj.bej.link':     'Ver projeto ↗',
       'proj.bej.title':    'Brasil em Jogo — Povos Indígenas',
@@ -351,7 +353,8 @@
       'skills.cloud':    'Cloud & Tools',
       'skills.soft':     'Zachte Vaardigheden',
 
-      'projects.title':    'Geselecteerde Projecten',
+      'projects.title':       'Geselecteerde Projecten',
+      'proj.personal.badge':  'Persoonlijk Project',
       'proj.bej.label':    'Geospatiaal · Datavisualisatie · Civieke Technologie',
       'proj.bej.link':     'Bekijk live ↗',
       'proj.bej.title':    'Brasil em Jogo — Povos Indígenas',

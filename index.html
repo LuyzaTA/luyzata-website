@@ -147,139 +147,114 @@
             </g>
           </defs>
 
-          <!-- Decorative angle markers -->
-          <text class="sv-deco" x="18" y="352" dominant-baseline="middle">«</text>
-          <text class="sv-deco" x="682" y="352" dominant-baseline="middle" text-anchor="end">»</text>
-
-          <!-- Static connection lines -->
-          <g class="sv-conn-base">
+          <!-- Primary connection lines (center → satellite) -->
+          <g class="sv-conn-primary">
             <line x1="350" y1="350" x2="350" y2="148"/>
             <line x1="350" y1="350" x2="524" y2="210"/>
             <line x1="350" y1="350" x2="568" y2="358"/>
             <line x1="350" y1="350" x2="485" y2="508"/>
             <line x1="350" y1="350" x2="145" y2="342"/>
             <line x1="350" y1="350" x2="215" y2="188"/>
-            <!-- Cross-connections -->
+          </g>
+
+          <!-- Secondary connections (cross-links + Oracle) -->
+          <g class="sv-conn-secondary">
+            <line x1="350" y1="350" x2="210" y2="490"/>
             <line x1="350" y1="148" x2="524" y2="210"/>
             <line x1="524" y1="210" x2="568" y2="358"/>
             <line x1="350" y1="148" x2="215" y2="188"/>
             <line x1="145" y1="342" x2="215" y2="188"/>
-            <line x1="485" y1="508" x2="350" y2="148" stroke-dasharray="5 7" opacity="0.35"/>
-            <!-- Leaf branches from NTT Data -->
-            <line x1="215" y1="188" x2="115" y2="104" stroke-dasharray="4 5" opacity="0.5"/>
-            <line x1="215" y1="188" x2="97"  y2="243" stroke-dasharray="4 5" opacity="0.5"/>
-            <line x1="215" y1="188" x2="249" y2="62"  stroke-dasharray="4 5" opacity="0.5"/>
-            <!-- Oracle — direct satellite of central node -->
-            <line x1="350" y1="350" x2="210" y2="490"/>
+            <line x1="485" y1="508" x2="350" y2="148"/>
           </g>
 
-          <!-- Animated connection pulses -->
+          <!-- Leaf connections from NTT Data -->
+          <g class="sv-conn-leaf">
+            <line x1="215" y1="188" x2="115" y2="104"/>
+            <line x1="215" y1="188" x2="97"  y2="243"/>
+            <line x1="215" y1="188" x2="249" y2="62"/>
+          </g>
+
+          <!-- Animated pulses — 6 primary connections only -->
           <line class="sv-pulse p1" x1="350" y1="350" x2="350" y2="148"/>
           <line class="sv-pulse p2" x1="350" y1="350" x2="524" y2="210"/>
           <line class="sv-pulse p3" x1="350" y1="350" x2="568" y2="358"/>
           <line class="sv-pulse p4" x1="350" y1="350" x2="485" y2="508"/>
           <line class="sv-pulse p5" x1="350" y1="350" x2="145" y2="342"/>
           <line class="sv-pulse p6" x1="350" y1="350" x2="215" y2="188"/>
-          <line class="sv-pulse p7" x1="350" y1="148" x2="524" y2="210"/>
-          <line class="sv-pulse p8" x1="524" y1="210" x2="568" y2="358"/>
-          <line class="sv-pulse p9"  x1="215" y1="188" x2="115" y2="104"/>
-          <line class="sv-pulse p10" x1="215" y1="188" x2="249" y2="62"/>
-          <line class="sv-pulse p12" x1="215" y1="188" x2="97"  y2="243"/>
-          <line class="sv-pulse p11" x1="350" y1="350" x2="210" y2="490"/>
 
-          <!-- Floating secondary dots -->
-          <circle class="sv-dot d1"  cx="462" cy="108" r="7"/>
-          <circle class="sv-dot d2"  cx="282" cy="115" r="9"/>
-          <circle class="sv-dot d3"  cx="620" cy="150" r="6"/>
-          <circle class="sv-dot d4"  cx="630" cy="436" r="8"/>
-          <circle class="sv-dot d5"  cx="112" cy="465" r="6"/>
-          <circle class="sv-dot d6"  cx="74"  cy="200" r="9"/>
-          <circle class="sv-dot d7"  cx="476" cy="590" r="6"/>
-          <circle class="sv-dot d8"  cx="194" cy="578" r="7"/>
-          <circle class="sv-dot d9"  cx="647" cy="286" r="5"/>
-          <circle class="sv-dot d10" cx="58"  cy="420" r="5"/>
-          <circle class="sv-dot d11" cx="400" cy="80"  r="4"/>
-          <circle class="sv-dot d12" cx="640" cy="540" r="4"/>
-
-          <!-- N1: Top — IBM DB2 -->
-          <circle class="sv-ng"       cx="350" cy="148" r="62" fill="url(#glowR)"/>
-          <circle class="sv-nr-outer" cx="350" cy="148" r="50"/>
-          <circle class="sv-nf"       cx="350" cy="148" r="41" fill="url(#nodeFill)"/>
-          <use href="#ic-db" x="350" y="133" class="sv-pi"/>
+          <!-- N1: IBM DB2 -->
+          <circle class="sv-ng"       cx="350" cy="148" r="52" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="350" cy="148" r="38"/>
+          <circle class="sv-nf"       cx="350" cy="148" r="30" fill="url(#nodeFill)"/>
+          <use href="#ic-db" x="350" y="139" class="sv-pi"/>
           <text class="sv-nlabel" x="350" y="162" text-anchor="middle">IBM DB2</text>
 
-          <!-- N2: Upper-right — Azure -->
-          <circle class="sv-ng"       cx="524" cy="210" r="56" fill="url(#glowR)"/>
-          <circle class="sv-nr-outer" cx="524" cy="210" r="44"/>
-          <circle class="sv-nf"       cx="524" cy="210" r="36" fill="url(#nodeFill)"/>
-          <use href="#ic-cloud" x="524" y="196" class="sv-pi"/>
+          <!-- N2: Azure -->
+          <circle class="sv-ng"       cx="524" cy="210" r="48" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="524" cy="210" r="38"/>
+          <circle class="sv-nf"       cx="524" cy="210" r="30" fill="url(#nodeFill)"/>
+          <use href="#ic-cloud" x="524" y="201" class="sv-pi"/>
           <text class="sv-nlabel" x="524" y="224" text-anchor="middle">Azure</text>
 
-          <!-- N3: Right — AI/ML -->
-          <circle class="sv-ng"       cx="568" cy="358" r="58" fill="url(#glowR)"/>
-          <circle class="sv-nr-outer" cx="568" cy="358" r="46"/>
-          <circle class="sv-nf"       cx="568" cy="358" r="38" fill="url(#nodeFill)"/>
-          <use href="#ic-chip" x="568" y="344" class="sv-pi"/>
-          <text class="sv-nlabel" x="568" y="372" text-anchor="middle">AI · ML</text>
+          <!-- N3: AI / ML -->
+          <circle class="sv-ng"       cx="568" cy="358" r="50" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="568" cy="358" r="38"/>
+          <circle class="sv-nf"       cx="568" cy="358" r="30" fill="url(#nodeFill)"/>
+          <use href="#ic-chip" x="568" y="349" class="sv-pi"/>
+          <text class="sv-nlabel" x="568" y="372" text-anchor="middle">AI / ML</text>
 
-          <!-- N4: Lower-right — Data Eng -->
-          <circle class="sv-ng"       cx="485" cy="508" r="54" fill="url(#glowR)"/>
-          <circle class="sv-nr-outer" cx="485" cy="508" r="42"/>
-          <circle class="sv-nf"       cx="485" cy="508" r="34" fill="url(#nodeFill)"/>
-          <use href="#ic-flow" x="485" y="494" class="sv-pi"/>
+          <!-- N4: Data Eng -->
+          <circle class="sv-ng"       cx="485" cy="508" r="48" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="485" cy="508" r="38"/>
+          <circle class="sv-nf"       cx="485" cy="508" r="30" fill="url(#nodeFill)"/>
+          <use href="#ic-flow" x="485" y="499" class="sv-pi"/>
           <text class="sv-nlabel" x="485" y="522" text-anchor="middle">Data Eng</text>
 
-          <!-- N5: Left — 14+ Years -->
-          <circle class="sv-ng"       cx="145" cy="342" r="56" fill="url(#glowR)"/>
-          <circle class="sv-nr-outer" cx="145" cy="342" r="44"/>
-          <circle class="sv-nf"       cx="145" cy="342" r="36" fill="url(#nodeFill)"/>
-          <use href="#ic-clock" x="145" y="328" class="sv-pi"/>
-          <text class="sv-nlabel" x="145" y="356" text-anchor="middle">14+ Yrs DBA</text>
+          <!-- N5: 14 Years -->
+          <circle class="sv-ng"       cx="145" cy="342" r="48" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="145" cy="342" r="38"/>
+          <circle class="sv-nf"       cx="145" cy="342" r="30" fill="url(#nodeFill)"/>
+          <use href="#ic-clock" x="145" y="333" class="sv-pi"/>
+          <text class="sv-nlabel" x="145" y="356" text-anchor="middle">14 Years</text>
 
-          <!-- N6: Upper-left — NTT Data -->
-          <circle class="sv-ng"       cx="215" cy="188" r="52" fill="url(#glowR)"/>
-          <circle class="sv-nr-outer" cx="215" cy="188" r="40"/>
-          <circle class="sv-nf"       cx="215" cy="188" r="33" fill="url(#nodeFill)"/>
-          <use href="#ic-bldg" x="215" y="175" class="sv-pi"/>
+          <!-- N6: NTT Data -->
+          <circle class="sv-ng"       cx="215" cy="188" r="46" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="215" cy="188" r="38"/>
+          <circle class="sv-nf"       cx="215" cy="188" r="30" fill="url(#nodeFill)"/>
+          <use href="#ic-bldg" x="215" y="179" class="sv-pi"/>
           <text class="sv-nlabel" x="215" y="202" text-anchor="middle">NTT Data</text>
 
-          <!-- Leaf: HSBC Bank -->
+          <!-- Leaf: HSBC -->
           <g class="sv-leaf">
-            <circle class="sv-ng"       cx="97"  cy="243" r="34" fill="url(#glowR)"/>
-            <circle class="sv-nr-outer" cx="97"  cy="243" r="24"/>
-            <circle class="sv-nf"       cx="97"  cy="243" r="18" fill="url(#nodeFill)"/>
-            <use href="#ic-bank" x="97" y="234" class="sv-pi"/>
-            <text class="sv-nlabel" x="97" y="255" text-anchor="middle">HSBC Bank</text>
+            <circle class="sv-nr-outer" cx="97"  cy="243" r="18"/>
+            <circle class="sv-nf"       cx="97"  cy="243" r="12" fill="url(#nodeFill)"/>
+            <text class="sv-nlabel" x="97" y="247" text-anchor="middle">HSBC</text>
           </g>
 
-          <!-- Leaf: Nordea Bank -->
+          <!-- Leaf: Nordea -->
           <g class="sv-leaf">
-            <circle class="sv-ng"       cx="115" cy="104" r="34" fill="url(#glowR)"/>
-            <circle class="sv-nr-outer" cx="115" cy="104" r="24"/>
-            <circle class="sv-nf"       cx="115" cy="104" r="18" fill="url(#nodeFill)"/>
-            <use href="#ic-bank" x="115" y="95"  class="sv-pi"/>
-            <text class="sv-nlabel" x="115" y="116" text-anchor="middle">Nordea Bank</text>
+            <circle class="sv-nr-outer" cx="115" cy="104" r="18"/>
+            <circle class="sv-nf"       cx="115" cy="104" r="12" fill="url(#nodeFill)"/>
+            <text class="sv-nlabel" x="115" y="108" text-anchor="middle">Nordea</text>
           </g>
 
           <!-- Leaf: IBM -->
           <g class="sv-leaf">
-            <circle class="sv-ng"       cx="249" cy="62"  r="34" fill="url(#glowR)"/>
-            <circle class="sv-nr-outer" cx="249" cy="62"  r="24"/>
-            <circle class="sv-nf"       cx="249" cy="62"  r="18" fill="url(#nodeFill)"/>
-            <use href="#ic-badge" x="249" y="53" class="sv-pi"/>
-            <text class="sv-nlabel" x="249" y="74"  text-anchor="middle">IBM</text>
+            <circle class="sv-nr-outer" cx="249" cy="62"  r="18"/>
+            <circle class="sv-nf"       cx="249" cy="62"  r="12" fill="url(#nodeFill)"/>
+            <text class="sv-nlabel" x="249" y="66"  text-anchor="middle">IBM</text>
           </g>
 
-          <!-- Oracle — satellite of central node -->
-          <circle class="sv-ng"       cx="210" cy="490" r="54" fill="url(#glowR)"/>
-          <circle class="sv-nr-outer" cx="210" cy="490" r="42"/>
-          <circle class="sv-nf"       cx="210" cy="490" r="34" fill="url(#nodeFill)"/>
-          <use href="#ic-db" x="210" y="476" class="sv-pi"/>
-          <text class="sv-nlabel" x="210" y="504" text-anchor="middle">Oracle</text>
+          <!-- Oracle — secondary satellite -->
+          <circle class="sv-ng"       cx="210" cy="490" r="40" fill="url(#glowR)"/>
+          <circle class="sv-nr-outer" cx="210" cy="490" r="30"/>
+          <circle class="sv-nf"       cx="210" cy="490" r="22" fill="url(#nodeFill)"/>
+          <use href="#ic-db" x="210" y="481" class="sv-pi"/>
+          <text class="sv-nlabel" x="210" y="501" text-anchor="middle">Oracle</text>
 
           <!-- Central node — Luyza Alexandre -->
-          <circle class="sv-ng sv-cng"   cx="350" cy="350" r="130" fill="url(#glowR)"/>
-          <circle class="sv-nr sv-cnr2"  cx="350" cy="350" r="92"/>
+          <circle class="sv-ng sv-cng"   cx="350" cy="350" r="120" fill="url(#glowR)"/>
+          <circle class="sv-orbit-ring"  cx="350" cy="350" r="95"/>
           <circle class="sv-nr sv-cnr"   cx="350" cy="350" r="78"/>
           <circle class="sv-nf sv-cnf"   cx="350" cy="350" r="68" fill="url(#centerFill)"/>
           <use href="#pi-lg" x="350" y="336" class="sv-pi sv-cpi"/>

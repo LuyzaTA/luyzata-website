@@ -7,7 +7,7 @@
   <meta name="description" content="Senior data professional with 14+ years of enterprise database experience. Now engineering cloud data and AI solutions. Based in Utrecht, Netherlands.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;450;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,6 +15,7 @@
   <!-- ═══ NAV ═══ -->
   <nav id="nav" class="nav">
     <div class="nav__inner">
+      <a href="#home" class="nav__brand">Luyza Alexandre</a>
       <ul class="nav__links" id="navLinks">
         <li><a href="#about"       data-i18n="nav.about">About</a></li>
         <li><a href="#experience"  data-i18n="nav.experience">Experience</a></li>
@@ -24,9 +25,9 @@
         <li><a href="#contact" class="nav__contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="lang-switcher">
-        <button class="lang-btn lang-btn--active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="pt">PT</button>
-        <button class="lang-btn" data-lang="nl">NL</button>
+        <button class="lang-btn lang-btn--active" data-lang="en" aria-label="Switch to English">EN</button>
+        <button class="lang-btn" data-lang="pt" aria-label="Mudar para Português">PT</button>
+        <button class="lang-btn" data-lang="nl" aria-label="Wisselen naar Nederlands">NL</button>
       </div>
       <button class="nav__toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -36,56 +37,54 @@
 
   <!-- ═══ HERO ═══ -->
   <header class="hero" id="home">
-
-    <!-- floating geometric background shapes -->
-    <div class="hero__shapes" aria-hidden="true">
-      <div class="hero__shape s1"></div>
-      <div class="hero__shape s2"></div>
-      <div class="hero__shape s3"></div>
-      <div class="hero__shape s4"></div>
-      <div class="hero__shape s5"></div>
-      <div class="hero__shape s6"></div>
-      <div class="hero__shape s7"></div>
-      <div class="hero__shape s8"></div>
-      <div class="hero__shape s9"></div>
-      <div class="hero__shape s10"></div>
-      <div class="hero__shape s11"></div>
-      <div class="hero__shape s12"></div>
-    </div>
-
     <div class="hero__inner">
 
       <!-- left: text content -->
       <div class="hero__text">
-        <p class="hero__label" data-i18n="hero.label">Database Expert · Data Engineer · AI Practitioner</p>
+
+        <!-- Status eyebrow -->
+        <div class="hero__eyebrow">
+          <span class="hero__status-dot" aria-hidden="true"></span>
+          <span data-i18n="hero.location">Utrecht, Netherlands</span>
+          <span class="hero__eyebrow-sep" aria-hidden="true">—</span>
+          <span class="hero__status" data-i18n="hero.status">Open to opportunities</span>
+        </div>
+
+        <!-- Name -->
         <h1 class="hero__name">
           <span class="hero__name-l1">Luyza</span>
           <span class="hero__name-l2">Alexandre</span>
         </h1>
-        <p class="hero__sub"><span data-i18n="hero.location">Netherlands</span> &nbsp;—&nbsp; <span class="hero__status" data-i18n="hero.status">Open to opportunities</span></p>
+
+        <!-- Statement -->
+        <p class="hero__statement" data-i18n="hero.statement">14 years engineering systems that don't fail. Now building the next layer.</p>
+
+        <!-- Role descriptor -->
+        <p class="hero__label" data-i18n="hero.label">DB2 LUW · Data Engineering · AI Practitioner</p>
+
+        <!-- CTAs — two max -->
         <div class="hero__actions">
           <a href="#contact" class="btn btn--primary" data-i18n="hero.btn.contact">Get in touch</a>
           <a href="https://www.linkedin.com/in/luyza-t-alexandre-74ba9617/" target="_blank" rel="noopener" class="btn btn--outline">LinkedIn ↗</a>
-          <a href="https://drive.google.com/file/d/1rkyta44aRv85ohCqflvxnJPnY4Fa9nzq/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn--ghost">Download CV ↗</a>
         </div>
       </div>
 
       <!-- right: network graph visual -->
-      <div class="hero__visual" aria-hidden="true">
+      <div class="hero__visual" aria-label="Career network diagram showing connections between IBM DB2, Azure, AI/ML, Data Engineering, and enterprise experience" role="img">
         <svg class="hero__svg" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
           <defs>
             <radialGradient id="nodeFill" cx="50%" cy="50%" r="50%">
-              <stop offset="0%"   stop-color="#1a5ab8"/>
-              <stop offset="100%" stop-color="#0b2348"/>
+              <stop offset="0%"   stop-color="#1a3a6b"/>
+              <stop offset="100%" stop-color="#071428"/>
             </radialGradient>
             <radialGradient id="centerFill" cx="50%" cy="50%" r="50%">
-              <stop offset="0%"   stop-color="#1e6acf"/>
-              <stop offset="100%" stop-color="#0d2850"/>
+              <stop offset="0%"   stop-color="#1e4a8f"/>
+              <stop offset="100%" stop-color="#091832"/>
             </radialGradient>
             <radialGradient id="glowR" cx="50%" cy="50%" r="50%">
-              <stop offset="0%"   stop-color="#f97316" stop-opacity="0.65"/>
-              <stop offset="55%"  stop-color="#f97316" stop-opacity="0.18"/>
-              <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+              <stop offset="0%"   stop-color="#ff6b2b" stop-opacity="0.55"/>
+              <stop offset="55%"  stop-color="#ff6b2b" stop-opacity="0.14"/>
+              <stop offset="100%" stop-color="#ff6b2b" stop-opacity="0"/>
             </radialGradient>
             <!-- Database: 3 stacked discs (IBM DB2) -->
             <g id="ic-db">
@@ -118,7 +117,7 @@
               <rect x="-6" y="-2" width="12" height="3.5" rx="1.5"/>
               <rect x="-3" y="4"  width="6"  height="3.5" rx="1.5"/>
             </g>
-            <!-- Clock: ring + hour + minute hands (14+ Yrs) -->
+            <!-- Clock: ring + hands (14+ Yrs) -->
             <g id="ic-clock">
               <path fill-rule="evenodd" d="M0,-10 a10,10 0 1,0 0,20 a10,10 0 1,0 0,-20 M0,-7 a7,7 0 1,1 0,14 a7,7 0 1,1 0,-14"/>
               <rect x="-1"  y="-6" width="2" height="6"  rx="1"/>
@@ -129,7 +128,7 @@
             <g id="ic-bldg">
               <path fill-rule="evenodd" d="M-9,-11 H9 V8 H-9 Z M-7,-8 H-3 V-5 H-7 Z M1,-8 H5 V-5 H1 Z M-7,-2 H-3 V1 H-7 Z M1,-2 H5 V1 H1 Z M-2,3 H2 V8 H-2 Z"/>
             </g>
-            <!-- Greek columns: pediment + 3 pillars + base (Nordea Bank) -->
+            <!-- Greek columns (Nordea Bank / HSBC) -->
             <g id="ic-bank">
               <polygon points="0,-12 -10,-6 10,-6"/>
               <rect x="-9"   y="-5.5" width="3" height="12.5" rx="0.5"/>
@@ -137,11 +136,11 @@
               <rect x="6"    y="-5.5" width="3" height="12.5" rx="0.5"/>
               <rect x="-11"  y="7"    width="22" height="3"   rx="0.5"/>
             </g>
-            <!-- Shield badge: outer + inner cutout (IBM) -->
+            <!-- Shield badge (IBM) -->
             <g id="ic-badge">
               <path fill-rule="evenodd" d="M0,-11 L10,-7 L10,1 Q10,9 0,12 Q-10,9 -10,1 L-10,-7 Z M0,-7.5 L6.5,-5 L6.5,1 Q6.5,6.5 0,8.5 Q-6.5,6.5 -6.5,1 L-6.5,-5 Z"/>
             </g>
-            <!-- Central person icon (Luyza) -->
+            <!-- Central person icon -->
             <g id="pi-lg">
               <circle cx="0" cy="-16" r="13"/>
               <path d="M-17,6 C-17,-6 -7,-9 0,-9 C7,-9 17,-6 17,6 Z"/>
@@ -165,12 +164,12 @@
             <line x1="524" y1="210" x2="568" y2="358"/>
             <line x1="350" y1="148" x2="215" y2="188"/>
             <line x1="145" y1="342" x2="215" y2="188"/>
-            <line x1="485" y1="508" x2="350" y2="148" stroke-dasharray="5 7" opacity="0.4"/>
+            <line x1="485" y1="508" x2="350" y2="148" stroke-dasharray="5 7" opacity="0.35"/>
             <!-- Leaf branches from NTT Data -->
-            <line x1="215" y1="188" x2="115" y2="104" stroke-dasharray="4 5" opacity="0.6"/>
-            <line x1="215" y1="188" x2="97"  y2="243" stroke-dasharray="4 5" opacity="0.6"/>
-            <line x1="215" y1="188" x2="249" y2="62"  stroke-dasharray="4 5" opacity="0.6"/>
-            <!-- Oracle — direct satellite of central LA node -->
+            <line x1="215" y1="188" x2="115" y2="104" stroke-dasharray="4 5" opacity="0.5"/>
+            <line x1="215" y1="188" x2="97"  y2="243" stroke-dasharray="4 5" opacity="0.5"/>
+            <line x1="215" y1="188" x2="249" y2="62"  stroke-dasharray="4 5" opacity="0.5"/>
+            <!-- Oracle — direct satellite of central node -->
             <line x1="350" y1="350" x2="210" y2="490"/>
           </g>
 
@@ -183,11 +182,9 @@
           <line class="sv-pulse p6" x1="350" y1="350" x2="215" y2="188"/>
           <line class="sv-pulse p7" x1="350" y1="148" x2="524" y2="210"/>
           <line class="sv-pulse p8" x1="524" y1="210" x2="568" y2="358"/>
-          <!-- Leaf pulses from NTT Data -->
           <line class="sv-pulse p9"  x1="215" y1="188" x2="115" y2="104"/>
           <line class="sv-pulse p10" x1="215" y1="188" x2="249" y2="62"/>
           <line class="sv-pulse p12" x1="215" y1="188" x2="97"  y2="243"/>
-          <!-- Oracle leaf pulse — from central LA node -->
           <line class="sv-pulse p11" x1="350" y1="350" x2="210" y2="490"/>
 
           <!-- Floating secondary dots -->
@@ -246,7 +243,7 @@
           <use href="#ic-bldg" x="215" y="175" class="sv-pi"/>
           <text class="sv-nlabel" x="215" y="202" text-anchor="middle">NTT Data</text>
 
-          <!-- Leaf: HSBC Bank (child of NTT Data) -->
+          <!-- Leaf: HSBC Bank -->
           <g class="sv-leaf">
             <circle class="sv-ng"       cx="97"  cy="243" r="34" fill="url(#glowR)"/>
             <circle class="sv-nr-outer" cx="97"  cy="243" r="24"/>
@@ -255,7 +252,7 @@
             <text class="sv-nlabel" x="97" y="255" text-anchor="middle">HSBC Bank</text>
           </g>
 
-          <!-- Leaf: Nordea Bank (child of NTT Data) -->
+          <!-- Leaf: Nordea Bank -->
           <g class="sv-leaf">
             <circle class="sv-ng"       cx="115" cy="104" r="34" fill="url(#glowR)"/>
             <circle class="sv-nr-outer" cx="115" cy="104" r="24"/>
@@ -264,7 +261,7 @@
             <text class="sv-nlabel" x="115" y="116" text-anchor="middle">Nordea Bank</text>
           </g>
 
-          <!-- Leaf: IBM (child of NTT Data) -->
+          <!-- Leaf: IBM -->
           <g class="sv-leaf">
             <circle class="sv-ng"       cx="249" cy="62"  r="34" fill="url(#glowR)"/>
             <circle class="sv-nr-outer" cx="249" cy="62"  r="24"/>
@@ -273,14 +270,14 @@
             <text class="sv-nlabel" x="249" y="74"  text-anchor="middle">IBM</text>
           </g>
 
-          <!-- Oracle — satellite node, direct child of central LA node -->
+          <!-- Oracle — satellite of central node -->
           <circle class="sv-ng"       cx="210" cy="490" r="54" fill="url(#glowR)"/>
           <circle class="sv-nr-outer" cx="210" cy="490" r="42"/>
           <circle class="sv-nf"       cx="210" cy="490" r="34" fill="url(#nodeFill)"/>
           <use href="#ic-db" x="210" y="476" class="sv-pi"/>
           <text class="sv-nlabel" x="210" y="504" text-anchor="middle">Oracle</text>
 
-          <!-- Central node -->
+          <!-- Central node — Luyza Alexandre -->
           <circle class="sv-ng sv-cng"   cx="350" cy="350" r="130" fill="url(#glowR)"/>
           <circle class="sv-nr sv-cnr2"  cx="350" cy="350" r="92"/>
           <circle class="sv-nr sv-cnr"   cx="350" cy="350" r="78"/>
@@ -292,31 +289,6 @@
 
     </div>
   </header>
-
-  <!-- ═══ STATS BAR ═══ -->
-  <div class="statsbar">
-    <div class="statsbar__inner">
-      <div class="statsbar__item">
-        <strong>14+</strong>
-        <span data-i18n="stats.years">Years of Experience</span>
-      </div>
-      <div class="statsbar__sep"></div>
-      <div class="statsbar__item">
-        <strong>4</strong>
-        <span data-i18n="stats.countries">Countries Worked In</span>
-      </div>
-      <div class="statsbar__sep"></div>
-      <div class="statsbar__item">
-        <strong>MBA</strong>
-        <span data-i18n="stats.mba">Data Science & AI — 2025</span>
-      </div>
-      <div class="statsbar__sep"></div>
-      <div class="statsbar__item">
-        <strong>Azure</strong>
-        <span data-i18n="stats.azure">Certified</span>
-      </div>
-    </div>
-  </div>
 
   <main>
 
@@ -345,9 +317,30 @@
               Netherlands — I bring a multicultural perspective that makes me effective in the
               international, diverse teams that define Dutch tech environments.
             </p>
+
+            <!-- Inline stats (replaces the stats bar) -->
+            <div class="about__stats animate">
+              <div class="about__stat">
+                <strong>14+</strong>
+                <span data-i18n="stats.years">Years of Experience</span>
+              </div>
+              <div class="about__stat">
+                <strong>4</strong>
+                <span data-i18n="stats.countries">Countries Worked In</span>
+              </div>
+              <div class="about__stat">
+                <strong>5</strong>
+                <span data-i18n="stats.db2certs">IBM DB2 Certs</span>
+              </div>
+              <div class="about__stat">
+                <strong>MBA</strong>
+                <span data-i18n="stats.mba">Data Science & AI</span>
+              </div>
+            </div>
           </div>
+
           <div class="about__sidebar">
-            <div class="highlights">
+            <div class="highlights animate">
               <h3 class="highlights__title" data-i18n="about.highlights.title">Key highlights</h3>
               <ul class="highlights__list">
                 <li data-i18n="about.h1">14+ years enterprise DBA at HSBC, Nordea & NTT Data</li>
@@ -358,7 +351,7 @@
                 <li data-i18n="about.h6">Trilingual: Portuguese · English · Dutch (learning)</li>
               </ul>
             </div>
-            <div class="contact-card">
+            <div class="contact-card animate">
               <a href="mailto:alexandre.t.luyza@gmail.com">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 alexandre.t.luyza@gmail.com
@@ -370,6 +363,7 @@
             </div>
           </div>
         </div>
+
         <div class="hobbies animate">
           <h4 class="hobbies__label" data-i18n="about.interests">Interests</h4>
           <div class="tags">
@@ -480,7 +474,7 @@
 
           <div class="skill-group animate">
             <h4 class="skill-group__title">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
               <span data-i18n="skills.database">Database</span>
             </h4>
             <div class="tags">
@@ -497,7 +491,7 @@
 
           <div class="skill-group animate">
             <h4 class="skill-group__title">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
               <span data-i18n="skills.dataeng">Data Engineering</span>
             </h4>
             <div class="tags">
@@ -513,7 +507,7 @@
 
           <div class="skill-group animate">
             <h4 class="skill-group__title">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
               <span data-i18n="skills.datasci">Data Science & AI</span>
             </h4>
             <div class="tags">
@@ -528,7 +522,7 @@
 
           <div class="skill-group animate">
             <h4 class="skill-group__title">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
               <span data-i18n="skills.cloud">Cloud & Tools</span>
             </h4>
             <div class="tags">
@@ -543,7 +537,7 @@
 
           <div class="skill-group animate">
             <h4 class="skill-group__title">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               <span data-i18n="skills.soft">Soft Skills</span>
             </h4>
             <div class="tags">
@@ -600,6 +594,37 @@
 
           <div class="project-card animate">
             <div class="project-card__top">
+              <span class="project-card__label" data-i18n="proj.bej.label">Geospatial · Data Visualization · Civic Tech · Personal Project</span>
+              <a href="https://brasil-em-jogo-indigenas.vercel.app/" target="_blank" rel="noopener" class="project-card__link" data-i18n="proj.bej.link">View live ↗</a>
+            </div>
+            <h3 class="project-card__title" data-i18n="proj.bej.title">Brasil em Jogo — Povos Indígenas</h3>
+            <p class="project-card__desc" data-i18n="proj.bej.desc">
+              Interactive geospatial platform mapping indigenous territories and villages across
+              Brazil, built on official FUNAI and IBGE government data. Features territory and
+              village visualization, a historical rights timeline from colonization to the 2022
+              Census, and full bilingual (PT/EN) navigation.
+            </p>
+            <div class="tags project-card__tech">
+              <span>Supabase</span><span>Vercel</span><span>Interactive Mapping</span><span>FUNAI / IBGE</span>
+            </div>
+          </div>
+
+          <div class="project-card animate">
+            <div class="project-card__top">
+              <span class="project-card__label" data-i18n="proj.aially.label">AI & Data Engineering · Market Intelligence · Personal Project</span>
+              <a href="https://aially-hub.vercel.app/" target="_blank" rel="noopener" class="project-card__link" data-i18n="proj.aially.link">View live ↗</a>
+            </div>
+            <h3 class="project-card__title" data-i18n="proj.aially.title">AIAlly Hub</h3>
+            <p class="project-card__desc" data-i18n="proj.aially.desc">
+              Global intelligence platform for the AI &amp; Data Engineering economy, with a focus on the Netherlands market. Aggregates live data across job listings, startup funding, and industry news — synced every 24 hours via AI and Supabase.
+            </p>
+            <div class="tags project-card__tech">
+              <span>Supabase</span><span>Vercel</span><span>AI</span><span>Live Data</span>
+            </div>
+          </div>
+
+          <div class="project-card animate">
+            <div class="project-card__top">
               <span class="project-card__label" data-i18n="proj.qf.label">Fintech · Machine Learning · MBA</span>
               <a href="https://github.com/LuyzaTA/fiapmba-quantum/" target="_blank" rel="noopener" class="project-card__link" data-i18n="proj.qf.link">Notebooks ↗</a>
             </div>
@@ -616,23 +641,6 @@
 
           <div class="project-card animate">
             <div class="project-card__top">
-              <span class="project-card__label" data-i18n="proj.bej.label">Geospatial · Data Visualization · Civic Tech · Personal Project</span>
-              <a href="https://brasil-em-jogo-indigenas.vercel.app/" target="_blank" rel="noopener" class="project-card__link" data-i18n="proj.bej.link">View live ↗</a>
-            </div>
-            <h3 class="project-card__title" data-i18n="proj.bej.title">Brasil em Jogo — Povos Indígenas</h3>
-            <p class="project-card__desc" data-i18n="proj.bej.desc">
-              Interactive geospatial platform mapping indigenous territories and villages across
-              Brazil, built on official FUNAI and IBGE government data. Features territory and
-              village visualization, a historical rights timeline from colonization to the 2022
-              Census, and full bilingual (PT/EN) navigation.
-            </p>
-            <div class="tags project-card__tech">
-              <span>Supabase</span><span>Vercel</span><span>Interactive Mapping</span><span>FUNAI / IBGE</span><span>Personal Project</span>
-            </div>
-          </div>
-
-          <div class="project-card animate">
-            <div class="project-card__top">
               <span class="project-card__label" data-i18n="proj.phil.label">Philosophy · Ideas · Personal Project</span>
               <a href="https://philosphere-kappa.vercel.app/" target="_blank" rel="noopener" class="project-card__link" data-i18n="proj.phil.link">View live ↗</a>
             </div>
@@ -644,20 +652,6 @@
             </p>
             <div class="tags project-card__tech">
               <span>Vercel</span><span>Web App</span>
-            </div>
-          </div>
-
-          <div class="project-card animate">
-            <div class="project-card__top">
-              <span class="project-card__label" data-i18n="proj.aially.label">AI & Data Engineering · Market Intelligence · Personal Project</span>
-              <a href="https://aially-hub.vercel.app/" target="_blank" rel="noopener" class="project-card__link" data-i18n="proj.aially.link">View live ↗</a>
-            </div>
-            <h3 class="project-card__title" data-i18n="proj.aially.title">AIAlly Hub</h3>
-            <p class="project-card__desc" data-i18n="proj.aially.desc">
-              Global intelligence platform for the AI &amp; Data Engineering economy, with a focus on the Netherlands market. Aggregates live data across job listings, startup funding, and industry news — synced every 24 hours via AI and Supabase.
-            </p>
-            <div class="tags project-card__tech">
-              <span>Supabase</span><span>Vercel</span><span>AI</span><span>Live Data</span>
             </div>
           </div>
 

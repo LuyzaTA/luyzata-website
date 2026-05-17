@@ -11,7 +11,7 @@
       'nav.contact':     'Contact',
 
       'hero.label':       'DB2 LUW · Data Engineering · AI Practitioner',
-      'hero.statement':   "14 years engineering systems that don't fail. Now building the next layer.",
+      'hero.statement':   "14 years engineering database systems that don't fail. Now building the next layer.",
       'hero.location':    'Netherlands',
       'hero.status':      'Open to opportunities',
       'hero.btn.contact': 'Get in touch',
@@ -158,7 +158,7 @@
       'nav.contact':     'Contato',
 
       'hero.label':       'DB2 LUW · Engenharia de Dados · IA',
-      'hero.statement':   '14 anos construindo sistemas que não falham. Agora construindo a próxima camada.',
+      'hero.statement':   '14 anos construindo sistemas de banco de dados que não falham. Agora construindo a próxima camada.',
       'hero.location':    'Países Baixos',
       'hero.status':      'Aberta a oportunidades',
       'hero.btn.contact': 'Entre em contato',
@@ -305,7 +305,7 @@
       'nav.contact':     'Contact',
 
       'hero.label':       'DB2 LUW · Data Engineering · AI-practitioner',
-      'hero.statement':   '14 jaar enterprise-systemen bouwen die niet falen. Nu de volgende laag.',
+      'hero.statement':   '14 jaar database-systemen bouwen die niet falen. Nu de volgende laag.',
       'hero.location':    'Nederland',
       'hero.status':      'Open voor kansen',
       'hero.btn.contact': 'Neem contact op',

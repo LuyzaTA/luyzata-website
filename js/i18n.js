@@ -12,7 +12,7 @@
 
       'hero.label':       'DB2 LUW · Data Engineering · AI Practitioner',
       'hero.statement':   "14 years engineering systems that don't fail. Now building the next layer.",
-      'hero.location':    'Utrecht, Netherlands',
+      'hero.location':    'Netherlands',
       'hero.status':      'Open to opportunities',
       'hero.btn.contact': 'Get in touch',
 
@@ -159,7 +159,7 @@
 
       'hero.label':       'DB2 LUW · Engenharia de Dados · IA',
       'hero.statement':   '14 anos construindo sistemas que não falham. Agora construindo a próxima camada.',
-      'hero.location':    'Utrecht, Países Baixos',
+      'hero.location':    'Países Baixos',
       'hero.status':      'Aberta a oportunidades',
       'hero.btn.contact': 'Entre em contato',
 
@@ -306,7 +306,7 @@
 
       'hero.label':       'DB2 LUW · Data Engineering · AI-practitioner',
       'hero.statement':   '14 jaar enterprise-systemen bouwen die niet falen. Nu de volgende laag.',
-      'hero.location':    'Utrecht, Nederland',
+      'hero.location':    'Nederland',
       'hero.status':      'Open voor kansen',
       'hero.btn.contact': 'Neem contact op',
 

@@ -1295,6 +1295,75 @@ body {
 }
 
 /* ═══════════════════════════════════════
+   PERSONAL USAGE / DUTCH TTS
+═══════════════════════════════════════ */
+.dutch-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 2rem 2.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem 2rem;
+  align-items: start;
+  max-width: 680px;
+  transition: border-color 0.2s;
+}
+.dutch-card:hover { border-color: var(--border-2); }
+
+.dutch-card__icon {
+  width: 56px;
+  height: 56px;
+  background: var(--accent-dim);
+  border: 1px solid rgba(255, 107, 43, 0.18);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.dutch-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.dutch-card__heading {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.dutch-card__desc {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  line-height: 1.65;
+  max-width: 46ch;
+}
+
+.tts-btn { align-self: flex-start; gap: 0.55rem; }
+
+.tts-btn[aria-pressed="true"] {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-2);
+  border: 1px solid var(--border-2);
+  box-shadow: none;
+}
+.tts-btn[aria-pressed="true"]:hover {
+  transform: none;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.tts-icon--stop { display: none; }
+#ttsBtn[aria-pressed="true"] .tts-icon--play { display: none; }
+#ttsBtn[aria-pressed="true"] .tts-icon--stop { display: inline; }
+
+/* ═══════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════ */
 @media (max-width: 960px) {

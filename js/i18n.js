@@ -9,6 +9,7 @@
       'nav.projects':    'Projects',
       'nav.credentials': 'Credentials',
       'nav.contact':     'Contact',
+      'nav.dutch':       'Dutch',
 
       'hero.label':       'DB2 LUW · Data Engineering · AI Practitioner',
       'hero.statement':   "14 years engineering database systems that don't fail. Now building the next layer.",
@@ -157,6 +158,7 @@
       'nav.projects':    'Projetos',
       'nav.credentials': 'Credenciais',
       'nav.contact':     'Contato',
+      'nav.dutch':       'Holandês',
 
       'hero.label':       'DB2 LUW · Engenharia de Dados · IA',
       'hero.statement':   '14 anos construindo sistemas de banco de dados que não falham. Agora construindo a próxima camada.',
@@ -305,6 +307,7 @@
       'nav.projects':    'Projecten',
       'nav.credentials': 'Kwalificaties',
       'nav.contact':     'Contact',
+      'nav.dutch':       'Nederlands',
 
       'hero.label':       'DB2 LUW · Data Engineering · AI-practitioner',
       'hero.statement':   '14 jaar database-systemen bouwen die niet falen. Nu de volgende laag.',

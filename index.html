@@ -22,6 +22,7 @@
         <li><a href="#skills"      data-i18n="nav.skills">Skills</a></li>
         <li><a href="#projects"    data-i18n="nav.projects">Projects</a></li>
         <li><a href="#credentials" data-i18n="nav.credentials">Credentials</a></li>
+        <li><a href="#dutch"   data-i18n="nav.dutch">Dutch</a></li>
         <li><a href="#contact" class="nav__contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="lang-switcher">
@@ -838,6 +839,36 @@
       </div>
     </section>
 
+    <!-- ═══ PERSONAL USAGE / DUTCH ═══ -->
+    <section id="dutch" class="section">
+      <div class="wrap">
+        <h2 class="section-title">Personal Usage · Dutch</h2>
+        <div class="dutch-card animate">
+          <div class="dutch-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <line x1="2" y1="12" x2="2" y2="17"/>
+              <line x1="22" y1="12" x2="22" y2="17"/>
+              <line x1="12" y1="12" x2="12" y2="22"/>
+            </svg>
+          </div>
+          <div class="dutch-card__body">
+            <h3 class="dutch-card__heading">Luisteren in het Nederlands</h3>
+            <p class="dutch-card__desc">
+              Listen to the full portfolio read aloud in Dutch — a personal immersion tool for language practice.
+              The page switches to Nederlands so you can read along while listening.
+            </p>
+            <button id="ttsBtn" class="btn btn--primary tts-btn" aria-pressed="false" aria-label="Start text to speech in Dutch">
+              <svg class="tts-icon tts-icon--play" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <svg class="tts-icon tts-icon--stop" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+              <span class="tts-label">Luister in het Nederlands</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ═══ CONTACT ═══ -->
     <section id="contact" class="contact">
       <div class="wrap contact__inner">
@@ -889,5 +920,6 @@
 
   <script src="js/main.js"></script>
   <script src="js/i18n.js"></script>
+  <script src="js/tts.js"></script>
 </body>
 </html>

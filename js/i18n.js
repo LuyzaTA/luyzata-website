@@ -83,6 +83,11 @@
       'proj.phil.title':   'Philosphere',
       'proj.phil.desc':    'A Universe of Ideas — an interactive web platform that brings philosophy to life, exploring thinkers, concepts, and schools of thought through an accessible and visually engaging experience.',
 
+      'proj.aially.label': 'AI & Data Engineering · Market Intelligence · Personal Project',
+      'proj.aially.link':  'View live ↗',
+      'proj.aially.title': 'AIAlly Hub',
+      'proj.aially.desc':  'Global intelligence platform for the AI & Data Engineering economy, with a focus on the Netherlands market. Aggregates live data across job listings, startup funding, and industry news — synced every 24 hours via AI and Supabase.',
+
       'cred.title':         'Education & Certifications',
       'cred.education':     'Education',
       'cred.certifications':'Certifications',
@@ -223,6 +228,11 @@
       'proj.phil.title':   'Philosphere',
       'proj.phil.desc':    'Um Universo de Ideias — plataforma web interativa que dá vida à filosofia, explorando pensadores, conceitos e correntes de pensamento por meio de uma experiência acessível e visualmente envolvente.',
 
+      'proj.aially.label': 'IA & Engenharia de Dados · Inteligência de Mercado · Projeto Pessoal',
+      'proj.aially.link':  'Ver projeto ↗',
+      'proj.aially.title': 'AIAlly Hub',
+      'proj.aially.desc':  'Plataforma de inteligência global para a economia de IA & Engenharia de Dados, com foco no mercado holandês. Agrega dados em tempo real sobre vagas de emprego, financiamento de startups e notícias do setor — sincronizado a cada 24 horas via IA e Supabase.',
+
       'cred.title':         'Educação & Certificações',
       'cred.education':     'Educação',
       'cred.certifications':'Certificações',
@@ -362,6 +372,11 @@
       'proj.phil.link':    'Bekijk live ↗',
       'proj.phil.title':   'Philosphere',
       'proj.phil.desc':    'Een Universum van Ideeën — een interactief webplatform dat filosofie tot leven brengt door denkers, concepten en stromingen te verkennen via een toegankelijke en visueel aantrekkelijke ervaring.',
+
+      'proj.aially.label': 'AI & Data Engineering · Marktintelligentie · Persoonlijk Project',
+      'proj.aially.link':  'Bekijk live ↗',
+      'proj.aially.title': 'AIAlly Hub',
+      'proj.aially.desc':  'Globaal intelligentieplatform voor de AI & Data Engineering-economie, met focus op de Nederlandse markt. Aggregeert live data over vacatures, startup-financiering en branchenieuws — elke 24 uur gesynchroniseerd via AI en Supabase.',
 
       'cred.title':         'Opleiding & Certificeringen',
       'cred.education':     'Opleiding',

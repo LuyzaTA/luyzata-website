@@ -42,9 +42,9 @@ module.exports = async function handler(req, res) {
           text: text.trim(),
           model_id: 'eleven_multilingual_v2',
           voice_settings: {
-            stability: 0.45,
-            similarity_boost: 0.80,
-            style: 0.20,
+            stability: 0.38,        /* lower = more natural prosody variation */
+            similarity_boost: 0.82, /* higher = stays true to the voice character */
+            style: 0.32,            /* more expressive, warmer delivery */
             use_speaker_boost: true,
           },
         }),

@@ -1363,6 +1363,13 @@ body {
 #ttsBtn[aria-pressed="true"] .tts-icon--play { display: none; }
 #ttsBtn[aria-pressed="true"] .tts-icon--stop { display: inline; }
 
+#ttsBtn:disabled {
+  opacity: 0.65;
+  cursor: wait;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
 /* ═══════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════ */

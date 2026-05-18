@@ -1,6 +1,6 @@
 /* Vercel serverless function — proxies text to Google Cloud Text-to-Speech
    Required env var: GOOGLE_TTS_API_KEY
-   Voice: nl-NL-Neural2-B (native Dutch male, Neural2 — highest quality)
+   Voice: nl-NL-Wavenet-D (native Dutch male, WaveNet)
 */
 
 module.exports = async function handler(req, res) {
@@ -34,7 +34,7 @@ module.exports = async function handler(req, res) {
           input: { text: text.trim() },
           voice: {
             languageCode: 'nl-NL',
-            name: 'nl-NL-Neural2-B',
+            name: 'nl-NL-Wavenet-D',
           },
           audioConfig: {
             audioEncoding: 'MP3',

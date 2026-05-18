@@ -12,7 +12,7 @@
       'nav.dutch':       'Dutch',
 
       'hero.label':       'DB2 LUW · Data Engineering · AI Practitioner',
-      'hero.statement':   "14 years engineering database systems that don't fail. Now building the next layer.",
+      'hero.statement':   'Fourteen years ensuring the data is available. Now making sure it thinks.',
       'hero.location':    'Netherlands',
       'hero.status':      'Open to opportunities',
       'hero.btn.contact': 'Get in touch',
@@ -164,7 +164,7 @@
       'nav.dutch':       'Holandês',
 
       'hero.label':       'DB2 LUW · Engenharia de Dados · IA',
-      'hero.statement':   '14 anos construindo sistemas de banco de dados que não falham. Agora construindo a próxima camada.',
+      'hero.statement':   'Catorze anos garantindo a disponibilidade dos dados. Agora garantindo que eles pensem.',
       'hero.location':    'Países Baixos',
       'hero.status':      'Aberta a oportunidades',
       'hero.btn.contact': 'Entre em contato',
@@ -316,7 +316,7 @@
       'nav.dutch':       'Nederlands',
 
       'hero.label':       'DB2 LUW · Data Engineering · AI-practitioner',
-      'hero.statement':   '14 jaar database-systemen bouwen die niet falen. Nu de volgende laag.',
+      'hero.statement':   'Veertien jaar zorgen dat de data beschikbaar is. Nu zorgen dat het denkt.',
       'hero.location':    'Nederland',
       'hero.status':      'Open voor kansen',
       'hero.btn.contact': 'Neem contact op',

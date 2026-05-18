@@ -13,7 +13,7 @@
 
     /* Introductie */
     'Mijn naam is Luyza Alexandre. Ik ben een data engineer en AI-practitioner, gevestigd in Utrecht. '
-    + 'Veertien jaar lang heb ik database-systemen gebouwd die niet falen. Nu bouw ik de volgende laag.',
+    + 'Veertien jaar lang heb ik gezorgd dat de data altijd beschikbaar is. Nu zorg ik dat het denkt.',
 
     /* Over mij */
     'Ik ben een database professional met meer dan veertien jaar enterprise-ervaring bij wereldwijde '

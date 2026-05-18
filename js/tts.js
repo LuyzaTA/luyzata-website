@@ -4,9 +4,116 @@
   var btn          = document.getElementById('ttsBtn');
   var label        = btn.querySelector('.tts-label');
   var active       = false;
-  var currentAudio = null;   /* Audio element currently playing */
-  var synth        = window.speechSynthesis; /* Web Speech fallback */
+  var currentAudio = null;
+  var synth        = window.speechSynthesis;
   var keepAlive;
+
+  /* ── Curated Dutch narration — natural speech, not raw DOM text ── */
+  var SCRIPT = [
+
+    /* Introductie */
+    'Mijn naam is Luyza Alexandre. Ik ben een data engineer en AI-practitioner, gevestigd in Utrecht. '
+    + 'Veertien jaar lang heb ik database-systemen gebouwd die niet falen. Nu bouw ik de volgende laag.',
+
+    /* Over mij */
+    'Ik ben een database professional met meer dan veertien jaar enterprise-ervaring bij wereldwijde '
+    + 'organisaties, waaronder HSBC Bank, Nordea Bank en NTT Data Business Solutions. '
+    + 'Mijn diepgaande expertise ligt in IBM DB2 LUW productieomgevingen, systeembetrouwbaarheid '
+    + 'en grootschalig databasebeheer in de financiële dienstverlening en consultancy. '
+    + 'Ik woon in Utrecht en ben volledig toegewijd aan een langdurige carrière in Nederland. '
+    + 'Omdat ik in vier landen heb geleefd en gewerkt — Brazilië, Polen, Bulgarije en Nederland — '
+    + 'breng ik een multicultureel perspectief mee dat mij effectief maakt in internationale, diverse teams.',
+
+    /* Tweede laag vaardigheden */
+    'Sinds 2021 bouw ik actief een tweede laag vaardigheden op in moderne data engineering, '
+    + 'cloud computing en kunstmatige intelligentie. '
+    + 'Ik heb een MBA in Data Science en Kunstmatige Intelligentie afgerond bij FIAP in 2025, '
+    + 'Microsoft Azure-certificeringen behaald en doorloop het Databricks Data Engineer leerpad. '
+    + 'Mijn doel is een rol waarbij diepgaande technische fundamenten samenkomen '
+    + 'met moderne data-infrastructuuruitdagingen.',
+
+    /* Werkervaring */
+    'Werkervaring. '
+    + 'Momenteel werk ik als Database Consultant bij NTT Data Business Solutions in Utrecht. '
+    + 'Ik ondersteun SAP DB2 productiedatabases in een internationaal team in Nederland, Duitsland, Mexico en India, '
+    + 'en ben de primaire technische contactpersoon voor databasebetrouwbaarheid en escalatie '
+    + 'in grootschalige enterprise SAP-omgevingen.',
+
+    'Van 2018 tot 2021 werkte ik als Senior Databasebeheerder bij Nordea Bank in Warschau, Polen. '
+    + 'Ik ondersteunde DB2 productie- en ontwikkelingsdatabases voor een pan-Scandinavische bankgroep '
+    + 'in Polen, Finland, Zweden en Denemarken, en leidde DB2 LUW onderhoud, upgrades en auditimplementatie. '
+    + 'Van 2013 tot 2015 was ik Senior Databasebeheerder bij HSBC Bank in São Paulo, '
+    + 'als onderdeel van een 24 uur per dag, 7 dagen per week globale DB2 LUW productieondersteuningsrotatie '
+    + 'in de VS, het VK, Brazilië, India en China.',
+
+    /* Vaardigheden */
+    'Mijn kernexpertise ligt in databasetechnologie: IBM DB2 LUW en Oracle, '
+    + 'met jarenlange ervaring in productieomgevingen bij internationale financiële instellingen. '
+    + 'In data engineering werk ik met Python, SQL, Databricks en Apache Spark. '
+    + 'Voor cloud en infrastructuur maak ik gebruik van Microsoft Azure. '
+    + 'Op persoonlijk vlak ben ik een analytisch denker met sterke communicatieve vaardigheden, '
+    + 'gewend aan internationale werkomgevingen.',
+
+    /* Projecten */
+    'Geselecteerde projecten. '
+    + 'Brasil em Jogo is een interactief geospatiaal platform dat inheemse gebieden en dorpen '
+    + 'in heel Brazilië in kaart brengt, gebouwd op officiële overheidsgegevens van FUNAI en IBGE. '
+    + 'Het platform bevat een historische tijdlijn van rechten, van de kolonisatie tot de volkstelling van 2022, '
+    + 'met volledige tweetalige navigatie. '
+    + 'De DB2 LUW versie-upgrade — van 10.5 naar 11.5 — was een bedrijfskritisch project '
+    + 'over productieomgevingen in Mexico, Nederland, Duitsland en India, '
+    + 'afgeleverd met nul kritieke downtime in een HADR-productieomgeving.',
+
+    'Het DB2 LUW Audit-project bij Nordea Bank omvatte het end-to-end ontwerp en de implementatie '
+    + 'van een auditoplossing in een multinationale omgeving, '
+    + 'waarbij DB2-expertise werd gecombineerd met compliance-vereisten. '
+    + 'Quantum Finance is een end-to-end data science oplossing voor een fintech use case, '
+    + 'ontwikkeld tijdens mijn MBA aan FIAP. '
+    + 'Philosphere is een interactief webplatform dat filosofie tot leven brengt '
+    + 'door denkers, concepten en stromingen te verkennen. '
+    + 'En AIAlly Hub is een globaal intelligentieplatform voor de AI en Data Engineering-economie, '
+    + 'met focus op de Nederlandse markt — elke 24 uur gesynchroniseerd via AI en Supabase.',
+
+    /* Opleiding & Certificeringen */
+    'Opleiding en certificeringen. '
+    + 'Ik heb een MBA in Data Science en Kunstmatige Intelligentie behaald bij FIAP in Brazilië, in 2025. '
+    + 'Daarvoor behaalde ik een Postdoctoraal diploma in Databasebeheer met specialisatie in DB2 en Oracle, '
+    + 'en een Bachelor Informatica. '
+    + 'Mijn certificeringen omvatten: Azure Fundamentals en Azure Data Fundamentals van Microsoft, '
+    + 'vijf IBM DB2 LUW certificeringen waaronder Advanced DBA en Certified Database Associate, '
+    + 'ITIL Foundations, Data Engineering Fundamentals van IBM, '
+    + 'en ik volg momenteel het Databricks Data Engineer leerpad.',
+
+    /* Aanbevelingen */
+    'Aanbevelingen. '
+    + 'Tapio Saarinen, Database Reliability Engineering Team Lead bij Nordcloud, schrijft: '
+    + '"Ik had het genoegen nauw samen te werken met Luyza bij Nordea van 2018 tot 2021. '
+    + 'Naast haar sterke technische vaardigheden toonde Luyza consistent professionaliteit, '
+    + 'betrouwbaarheid en een rustige, toegankelijke houding die haar een echte teamspeler maakte. '
+    + 'Luyza is een uitzonderlijke DBA — ik beveel haar ten zeerste aan."',
+
+    'Hans-Jürgen Zeltwanger, DB2-expert bij IBM Deutschland, schrijft: '
+    + '"Ik had het genoegen om met Luyza te werken aan een groot en zeer complex project, '
+    + 'waarbij ze bewees een uitzonderlijk bekwame en toegewijde expert te zijn in zowel SAP als DB2. '
+    + 'Ze plande en beheerde een succesvolle grote DB2-versie-upgrade voor vele databases '
+    + 'in een complex HADR en Pacemaker clusteromgeving. Ik waardeer haar expertise en teamgeest."',
+
+    'Regina Bernal, Professor Statistiek bij FIAP, schrijft: '
+    + '"Luyza toonde sterke uitvoeringsvaardigheden, ondersteund door een solide basis in Python en Statistiek. '
+    + 'Ze is een nieuwsgierige en proactieve professional, altijd bereid om meer te leren — '
+    + 'een essentiële kwaliteit voor een data scientist. '
+    + 'Ik beveel haar vol vertrouwen aan voor elke kans in het Data Science-vakgebied." '
+    + 'En Dennis Tavares, Senior Oracle DBA en mentor, voegt toe: '
+    + '"Ze heeft uitgebreide kennis van databasebeheer en toont een grote passie voor '
+    + 'data engineering en data science, en blijft continu investeren in haar ontwikkeling."',
+
+    /* Afsluiting */
+    'Persoonlijke interesses: fotografie, poëzie, kajakken, kamperen, schilderen, kunst, nieuwe culturen en filosofie. '
+    + 'Bent u geïnteresseerd in samenwerking? '
+    + 'Ik ben momenteel beschikbaar voor functies in data engineering en data science in Nederland. '
+    + 'Neem gerust contact met mij op via e-mail of LinkedIn. Ik hoor graag van u.',
+
+  ];
 
   /* ── Lang helpers ── */
   function activeLang() {
@@ -16,51 +123,6 @@
   function switchLang(lang) {
     var b = document.querySelector('[data-lang="' + lang + '"]');
     if (b) b.click();
-  }
-
-  /* ── Harvest Dutch text from the page ── */
-  function harvest() {
-    var sections = [
-      'header.hero',
-      '#about',
-      '#experience',
-      '#skills',
-      '#projects',
-      '#credentials',
-      '#recommendations',
-    ];
-    var chunks = [];
-    sections.forEach(function (sel) {
-      var el = document.querySelector(sel);
-      if (!el) return;
-      var clone = el.cloneNode(true);
-      clone.querySelectorAll(
-        'button, .btn, [aria-hidden="true"], svg, script, style, .lang-switcher'
-      ).forEach(function (e) { e.remove(); });
-      clone.querySelectorAll(
-        'h1, h2, h3, h4, p, li, .tags span, .about__stat'
-      ).forEach(function (node) {
-        var t = node.textContent.replace(/\s+/g, ' ').trim();
-        if (t.length > 1) chunks.push(t);
-      });
-    });
-    return chunks;
-  }
-
-  /* ── Split joined text into API-safe chunks (≤ 4800 chars) ── */
-  function splitText(text, maxLen) {
-    if (text.length <= maxLen) return [text];
-    var result = [];
-    while (text.length > 0) {
-      if (text.length <= maxLen) { result.push(text); break; }
-      var cut = text.lastIndexOf('. ', maxLen);
-      if (cut === -1) cut = text.lastIndexOf(' ', maxLen);
-      if (cut === -1) cut = maxLen;
-      else cut += 1;
-      result.push(text.slice(0, cut).trim());
-      text = text.slice(cut).trim();
-    }
-    return result.filter(function (c) { return c.length > 0; });
   }
 
   /* ── Button state ── */
@@ -83,36 +145,35 @@
   }
 
   /* ── ElevenLabs path ── */
-  function speakWithElevenLabs(text) {
+  function speakWithElevenLabs(paragraphs) {
     setLoading();
+    active = true;
 
-    var chunks = splitText(text, 4800);
     var idx = 0;
 
     function playNext() {
-      if (!active && idx > 0) return; /* stopped mid-way */
-      if (idx >= chunks.length) { setIdle(); return; }
+      if (!active) return;
+      if (idx >= paragraphs.length) { setIdle(); return; }
 
-      var chunk = chunks[idx++];
+      var text = paragraphs[idx++];
 
       fetch('/api/tts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text: chunk }),
+        body: JSON.stringify({ text: text }),
       })
         .then(function (res) {
-          if (!res.ok) throw new Error('API ' + res.status);
+          if (!res.ok) throw new Error('HTTP ' + res.status);
           return res.arrayBuffer();
         })
         .then(function (buffer) {
-          if (!active && idx > 1) return; /* stopped while fetching */
+          if (!active) return;
 
-          var blob = new Blob([buffer], { type: 'audio/mpeg' });
-          var url  = URL.createObjectURL(blob);
+          var blob  = new Blob([buffer], { type: 'audio/mpeg' });
+          var url   = URL.createObjectURL(blob);
           var audio = new Audio(url);
           currentAudio = audio;
 
-          /* Mark active now that first audio is ready */
           if (idx === 1) setActive();
 
           audio.onended = function () {
@@ -123,63 +184,60 @@
           audio.onerror = function () {
             URL.revokeObjectURL(url);
             currentAudio = null;
-            playNext(); /* skip bad chunk, continue */
+            playNext();
           };
           audio.play().catch(function () { playNext(); });
         })
         .catch(function (err) {
-          console.warn('ElevenLabs error, falling back to Web Speech API:', err);
-          /* Fall back to browser TTS for remaining chunks */
+          console.warn('ElevenLabs unavailable, falling back to Web Speech API:', err);
           setIdle();
-          speakWithWebSpeech(chunks.slice(idx - 1));
+          speakWithWebSpeech(paragraphs.slice(idx - 1));
         });
     }
 
-    /* Kick off the first fetch; active flag is set once audio is ready */
-    active = true; /* set early so stop() works immediately */
     playNext();
   }
 
-  /* ── Web Speech API fallback ── */
-  function speakWithWebSpeech(chunks) {
+  /* ── Web Speech fallback ── */
+  function speakWithWebSpeech(paragraphs) {
     if (!synth) { setIdle(); return; }
     synth.cancel();
     setActive();
 
     var voices = synth.getVoices();
-    var voice  = pickDutchVoice(voices);
 
-    /* If voices not loaded yet, wait for voiceschanged */
     if (!voices.length) {
       synth.onvoiceschanged = function () {
         synth.onvoiceschanged = null;
-        voices = synth.getVoices();
-        voice  = pickDutchVoice(voices);
-        queueChunks(chunks, voice);
+        queueParagraphs(paragraphs, synth.getVoices());
       };
       return;
     }
-    queueChunks(chunks, voice);
+    queueParagraphs(paragraphs, voices);
   }
 
   function pickDutchVoice(voices) {
     var nl = voices.filter(function (v) { return v.lang.startsWith('nl'); });
-    /* Prefer Microsoft Online (Natural) neural voices */
     var neural = nl.find(function (v) {
       return v.name.includes('Online (Natural)') || v.name.includes('Neural');
     });
     if (neural) return neural;
     var google = nl.find(function (v) { return v.name.includes('Google'); });
-    if (google) return google;
-    return nl[0] || null;
+    return google || nl[0] || null;
   }
 
-  function queueChunks(chunks, voice) {
+  function queueParagraphs(paragraphs, voices) {
+    var voice = pickDutchVoice(voices);
     startKeepAlive();
     var i = 0;
+
     function next() {
-      if (!active || i >= chunks.length) { stopKeepAlive(); if (active) setIdle(); return; }
-      var u    = new SpeechSynthesisUtterance(chunks[i++]);
+      if (!active || i >= paragraphs.length) {
+        stopKeepAlive();
+        if (active) setIdle();
+        return;
+      }
+      var u    = new SpeechSynthesisUtterance(paragraphs[i++]);
       u.lang   = 'nl-NL';
       u.rate   = 0.88;
       u.pitch  = 1.0;
@@ -198,18 +256,10 @@
   }
   function stopKeepAlive() { clearInterval(keepAlive); }
 
-  /* ── Main entry point ── */
+  /* ── Main speak entry point ── */
   function speak() {
-    var origLang = activeLang();
     switchLang('nl');
-
-    var chunks = harvest();
-    var text   = chunks.join('. ');
-
-    if (!text.trim()) { switchLang(origLang); return; }
-
-    /* Try ElevenLabs; it will fall back to Web Speech on API error */
-    speakWithElevenLabs(text);
+    speakWithElevenLabs(SCRIPT);
   }
 
   function stop() {
@@ -219,7 +269,6 @@
     setIdle();
   }
 
-  /* ── Button click ── */
   btn.addEventListener('click', function () {
     if (active) stop();
     else speak();

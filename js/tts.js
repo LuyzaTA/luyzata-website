@@ -41,7 +41,12 @@
 
     'Van 2018 tot 2021 werkte ik als Senior Databasebeheerder bij Nordea Bank in Warschau, Polen. '
     + 'Ik ondersteunde DB2 productie- en ontwikkelingsdatabases voor een pan-Scandinavische bankgroep '
-    + 'in Polen, Finland, Zweden en Denemarken, en leidde DB2 LUW onderhoud, upgrades en auditimplementatie. '
+    + 'in Polen, Finland, Zweden en Denemarken, en leidde DB2 LUW onderhoud, upgrades en auditimplementatie.',
+
+    'Van november 2016 tot april 2018 werkte ik als DB2 LUW Database IT Specialist bij IBM in Wrocław, Polen. '
+    + 'Ik ondersteunde IBM-klanten in heel Europa als onderdeel van een Pools team, '
+    + 'met taken als databaseonderhoud, incidentoplossing, HADR, replicatie en upgrades '
+    + 'op Linux-, Unix- en Windows-platforms. '
     + 'Van 2013 tot 2015 was ik Senior Databasebeheerder bij HSBC Bank in São Paulo, '
     + 'als onderdeel van een 24 uur per dag, 7 dagen per week globale DB2 LUW productieondersteuningsrotatie '
     + 'in de VS, het VK, Brazilië, India en China.',
@@ -86,7 +91,7 @@
 
     /* Aanbevelingen */
     'Aanbevelingen. '
-    + 'Tapio Saarinen, Database Reliability Engineering Team Lead bij Nordcloud, schrijft: '
+    + 'Tapio Vaattanen, Database Reliability Engineering Team Lead bij Nordcloud, schrijft: '
     + '"Ik had het genoegen nauw samen te werken met Luyza bij Nordea van 2018 tot 2021. '
     + 'Naast haar sterke technische vaardigheden toonde Luyza consistent professionaliteit, '
     + 'betrouwbaarheid en een rustige, toegankelijke houding die haar een echte teamspeler maakte. '

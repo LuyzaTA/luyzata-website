@@ -1,6 +1,6 @@
-/* Vercel serverless function — proxies text to ElevenLabs TTS
-   Required env var: ELEVENLABS_API_KEY
-   Optional env var: ELEVENLABS_VOICE_ID  (defaults to Liam — multilingual male)
+/* Vercel serverless function — proxies text to Google Cloud Text-to-Speech
+   Required env var: GOOGLE_TTS_API_KEY
+   Voice: nl-NL-Neural2-B (native Dutch male, Neural2 — highest quality)
 */
 
 module.exports = async function handler(req, res) {
@@ -18,52 +18,47 @@ module.exports = async function handler(req, res) {
     return res.status(400).json({ error: 'text exceeds 5000 characters' });
   }
 
-  const apiKey = process.env.ELEVENLABS_API_KEY;
+  const apiKey = process.env.GOOGLE_TTS_API_KEY;
   if (!apiKey) {
     return res.status(503).json({ error: 'TTS service not configured' });
   }
 
-  /* Liam — TX3LPaxmHKxFdv7VOQHJ — natural male, excellent multilingual v2 Dutch
-     Override by setting ELEVENLABS_VOICE_ID in Vercel env vars */
-  const voiceId = process.env.ELEVENLABS_VOICE_ID || 'TX3LPaxmHKxFdv7VOQHJ';
-
-  let elResponse;
+  let gResponse;
   try {
-    elResponse = await fetch(
-      `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`,
+    gResponse = await fetch(
+      `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`,
       {
         method: 'POST',
-        headers: {
-          'xi-api-key': apiKey,
-          'Content-Type': 'application/json',
-          'Accept': 'audio/mpeg',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          text: text.trim(),
-          model_id: 'eleven_multilingual_v2',
-          voice_settings: {
-            stability: 0.38,        /* lower = more natural prosody variation */
-            similarity_boost: 0.82, /* stays true to voice character */
-            style: 0.32,            /* more expressive, warmer delivery */
-            use_speaker_boost: true,
+          input: { text: text.trim() },
+          voice: {
+            languageCode: 'nl-NL',
+            name: 'nl-NL-Neural2-B',
+          },
+          audioConfig: {
+            audioEncoding: 'MP3',
+            speakingRate: 0.90,
+            pitch: 0.0,
           },
         }),
       }
     );
   } catch (err) {
-    console.error('ElevenLabs fetch failed:', err);
+    console.error('Google TTS fetch failed:', err);
     return res.status(502).json({ error: 'Could not reach TTS service' });
   }
 
-  if (!elResponse.ok) {
-    const body = await elResponse.text().catch(() => '');
-    console.error('ElevenLabs error', elResponse.status, body);
-    return res.status(elResponse.status).json({ error: 'TTS service error' });
+  if (!gResponse.ok) {
+    const body = await gResponse.text().catch(() => '');
+    console.error('Google TTS error', gResponse.status, body);
+    return res.status(gResponse.status).json({ error: 'TTS service error' });
   }
 
-  const audio = await elResponse.arrayBuffer();
+  const data = await gResponse.json();
+  const audioBuffer = Buffer.from(data.audioContent, 'base64');
 
   res.setHeader('Content-Type', 'audio/mpeg');
   res.setHeader('Cache-Control', 'no-store');
-  res.send(Buffer.from(audio));
+  res.send(audioBuffer);
 };

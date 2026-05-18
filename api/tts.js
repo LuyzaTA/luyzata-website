@@ -1,6 +1,6 @@
 /* Vercel serverless function — proxies text to ElevenLabs TTS
    Required env var: ELEVENLABS_API_KEY
-   Optional env var: ELEVENLABS_VOICE_ID  (defaults to Aria — multilingual female)
+   Optional env var: ELEVENLABS_VOICE_ID  (defaults to Liam — multilingual male)
 */
 
 module.exports = async function handler(req, res) {
@@ -23,9 +23,9 @@ module.exports = async function handler(req, res) {
     return res.status(503).json({ error: 'TTS service not configured' });
   }
 
-  /* Aria — 9BWtsMINqrJLrRacOk9x — natural female, excellent Dutch with multilingual v2
+  /* Liam — TX3LPaxmHKxFdv7VOQHJ — natural male, excellent multilingual v2 Dutch
      Override by setting ELEVENLABS_VOICE_ID in Vercel env vars */
-  const voiceId = process.env.ELEVENLABS_VOICE_ID || '9BWtsMINqrJLrRacOk9x';
+  const voiceId = process.env.ELEVENLABS_VOICE_ID || 'TX3LPaxmHKxFdv7VOQHJ';
 
   let elResponse;
   try {

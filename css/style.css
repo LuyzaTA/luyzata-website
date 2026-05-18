@@ -1344,6 +1344,18 @@ body {
   line-height: 1.65;
   max-width: 46ch;
 }
+.dutch-card__powered {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: var(--text-2);
+  opacity: 0.6;
+}
+.dutch-card__powered code {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+}
 
 .tts-btn { align-self: flex-start; gap: 0.55rem; }
 

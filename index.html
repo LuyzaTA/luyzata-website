@@ -134,6 +134,11 @@
               <rect x="6"    y="-5.5" width="3" height="12.5" rx="0.5"/>
               <rect x="-11"  y="7"    width="22" height="3"   rx="0.5"/>
             </g>
+            <!-- Avatar clip -->
+            <clipPath id="avatarClip">
+              <circle cx="350" cy="350" r="65"/>
+            </clipPath>
+
             <!-- Shield badge (IBM) -->
             <g id="ic-badge">
               <path fill-rule="evenodd" d="M0,-11 L10,-7 L10,1 Q10,9 0,12 Q-10,9 -10,1 L-10,-7 Z M0,-7.5 L6.5,-5 L6.5,1 Q6.5,6.5 0,8.5 Q-6.5,6.5 -6.5,1 L-6.5,-5 Z"/>
@@ -280,8 +285,10 @@
           <circle class="sv-nr sv-cnr2"  cx="350" cy="350" r="92"/>
           <circle class="sv-nr sv-cnr"   cx="350" cy="350" r="78"/>
           <circle class="sv-nf sv-cnf"   cx="350" cy="350" r="68" fill="url(#centerFill)"/>
-          <use href="#pi-lg" x="350" y="336" class="sv-pi sv-cpi"/>
-          <text class="sv-clabel" x="350" y="364" text-anchor="middle">LA</text>
+          <image href="assets/luyzata.jpg"
+                 x="285" y="285" width="130" height="130"
+                 clip-path="url(#avatarClip)"
+                 preserveAspectRatio="xMidYMid slice"/>
         </svg>
       </div>
 

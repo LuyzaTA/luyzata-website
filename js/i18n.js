@@ -10,9 +10,10 @@
       'nav.credentials': 'Credentials',
       'nav.contact':     'Contact',
       'nav.dutch':       'Dutch',
+      'theme.toggle':    'Switch between light and dark theme',
 
-      'hero.label':       'DB2 LUW · Cloud Data Engineering · AI Practitioner',
-      'hero.statement':   'Fourteen years ensuring the data is available. Now making sure it thinks.',
+      'hero.label':       'Databases · Cloud Data Engineering · AI Practitioner',
+      'hero.statement':   'Building Modern Cloud Platforms and AI-ready Data Systems.',
       'hero.location':    'Netherlands',
       'hero.status':      'Open to opportunities',
       'hero.btn.contact': 'Get in touch',
@@ -162,9 +163,10 @@
       'nav.credentials': 'Credenciais',
       'nav.contact':     'Contato',
       'nav.dutch':       'Holandês',
+      'theme.toggle':    'Alternar entre tema claro e escuro',
 
-      'hero.label':       'DB2 LUW · Engenharia de Dados em Nuvem · IA',
-      'hero.statement':   'Catorze anos garantindo a disponibilidade dos dados. Agora garantindo que eles pensem.',
+      'hero.label':       'Bancos de Dados · Engenharia de Dados em Nuvem · IA',
+      'hero.statement':   'Construindo plataformas de nuvem modernas e sistemas de dados prontos para IA.',
       'hero.location':    'Países Baixos',
       'hero.status':      'Aberta a oportunidades',
       'hero.btn.contact': 'Entre em contato',
@@ -314,9 +316,10 @@
       'nav.credentials': 'Kwalificaties',
       'nav.contact':     'Contact',
       'nav.dutch':       'Nederlands',
+      'theme.toggle':    'Wisselen tussen licht en donker thema',
 
-      'hero.label':       'DB2 LUW · Cloud Data Engineering · AI-practitioner',
-      'hero.statement':   'Veertien jaar zorgen dat de data beschikbaar is. Nu zorgen dat het denkt.',
+      'hero.label':       'Databases · Cloud Data Engineering · AI-practitioner',
+      'hero.statement':   'Moderne cloudplatforms en AI-ready datasystemen bouwen.',
       'hero.location':    'Nederland',
       'hero.status':      'Open voor kansen',
       'hero.btn.contact': 'Neem contact op',
@@ -473,6 +476,11 @@
     document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
       var v = t[el.getAttribute('data-i18n-html')];
       if (v !== undefined) el.innerHTML = v;
+    });
+
+    document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
+      var v = t[el.getAttribute('data-i18n-aria')];
+      if (v !== undefined) el.setAttribute('aria-label', v);
     });
 
     document.querySelectorAll('.lang-btn').forEach(function (btn) {

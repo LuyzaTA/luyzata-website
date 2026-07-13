@@ -83,8 +83,21 @@ are independent IIFEs, loaded in this order and coupled only through the DOM:
   chars, returns `audio/mpeg`. Note: the frontend comments still say "ElevenLabs" but the
   live backend is Google TTS — treat the backend file as source of truth.
 
+- **`js/theme.js`** — light/dark theme toggle (the sun/moon button in the nav). Loaded first.
+  The actual initial theme is set by a small **inline script in `<head>`** (before first paint,
+  to avoid a flash): it reads `localStorage['theme']`, falling back to the OS
+  `prefers-color-scheme`. `theme.js` only wires the toggle button (flips + persists) and keeps
+  following the OS setting live *until* the visitor makes an explicit choice.
+
 - **`css/style.css`** — one stylesheet. Design tokens live in `:root` (dark cinematic theme,
   `--accent: #ff6b2b`). Section styling is organized under banner comments.
+  **Theming:** light mode is a `:root[data-theme="light"]` block that overrides the color
+  tokens. Any theme-dependent color must go through a token (`--bg`, `--surface`, `--text*`,
+  `--border*`, `--glass*`, `--hover*`, `--shadow*`) — do not hardcode dark-only values, or
+  they will break in light mode. **Exception — the hero network graph:** it is built from
+  dark-navy SVG node circles with white labels *inside* them, so it cannot recolor cleanly.
+  In light mode `.hero__visual` keeps a dark rounded backdrop and the SVG is left untouched;
+  that dark-panel choice is deliberate.
 
 ## Content-editing conventions
 

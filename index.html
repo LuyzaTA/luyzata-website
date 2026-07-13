@@ -19,6 +19,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;450;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Set theme before first paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 </head>
 <body>
 
@@ -34,6 +47,15 @@
         <li><a href="#credentials" data-i18n="nav.credentials">Credentials</a></li>
         <li><a href="#contact" class="nav__contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme" data-i18n-aria="theme.toggle">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+        </svg>
+      </button>
       <div class="lang-switcher">
         <button class="lang-btn lang-btn--active" data-lang="en" aria-label="Switch to English">EN</button>
         <button class="lang-btn" data-lang="pt" aria-label="Mudar para Português">PT</button>
@@ -65,10 +87,10 @@
         </h1>
 
         <!-- Statement -->
-        <p class="hero__statement" data-i18n="hero.statement">Fourteen years ensuring the data is available. Now making sure it thinks.</p>
+        <p class="hero__statement" data-i18n="hero.statement">Building Modern Cloud Platforms and AI-ready Data Systems.</p>
 
         <!-- Role descriptor -->
-        <p class="hero__label" data-i18n="hero.label">DB2 LUW · Cloud Data Engineering · AI Practitioner</p>
+        <p class="hero__label" data-i18n="hero.label">Databases · Cloud Data Engineering · AI Practitioner</p>
 
         <!-- CTAs — two max -->
         <div class="hero__actions">
@@ -958,6 +980,7 @@
     </div>
   </footer>
 
+  <script src="js/theme.js"></script>
   <script src="js/main.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/tts.js"></script>

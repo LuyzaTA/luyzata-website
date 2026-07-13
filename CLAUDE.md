@@ -94,12 +94,13 @@ are independent IIFEs, loaded in this order and coupled only through the DOM:
   **Theming:** light mode is a `:root[data-theme="light"]` block that overrides the color
   tokens. Any theme-dependent color must go through a token (`--bg`, `--surface`, `--text*`,
   `--border*`, `--glass*`, `--hover*`, `--shadow*`) — do not hardcode dark-only values, or
-  they will break in light mode. **Exception — the hero network graph:** it is built from
-  dark-navy SVG node circles with white labels *inside* them, so it cannot recolor cleanly.
-  Instead `.hero__visual` gives it a **light panel in BOTH themes** (dark-on-dark read as
-  muddy in dark mode). Node labels that sit *inside* a navy circle stay white; the leaf
-  labels (`.sv-leaf .sv-nlabel`) sit on the light panel, so they are positioned below their
-  node and colored dark. Keep that in mind when adding/moving graph labels.
+  they will break in light mode. **Hero network graph:** it sits directly on the page
+  background (no panel) and flips its own colors per theme via tokens — `--node-a/--node-b`
+  (the `#nodeFill` gradient stops, set through the `.node-a`/`.node-b` stop classes since
+  SVG attributes can't read `var()`), plus `--sv-label` / `--sv-icon` (labels & icons inside
+  nodes) and `--sv-label-leaf` (the free-standing leaf labels). Light theme = navy nodes +
+  white in-node text; dark theme = light nodes + dark in-node text. When adding a graph node,
+  use the existing `.sv-*` classes so it themes automatically; don't hardcode node colors.
 
 ## Content-editing conventions
 

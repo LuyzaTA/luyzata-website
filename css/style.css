@@ -46,6 +46,14 @@ svg { flex-shrink: 0; }
   --hover-strong: rgba(255, 255, 255, 0.09);
   --hover-border: rgba(255, 255, 255, 0.22);
 
+  /* Hero network graph — sits directly on the page bg, so it flips per
+     theme. Dark page → light nodes + dark labels for contrast. */
+  --node-a:        #e9eef7;
+  --node-b:        #c3d0e4;
+  --sv-label:      rgba(14, 22, 38, 0.82);
+  --sv-label-leaf: rgba(226, 233, 244, 0.68);
+  --sv-icon:       rgba(14, 22, 38, 0.80);
+
   /* Typography */
   --sans:  'Inter', system-ui, sans-serif;
   --serif: 'DM Serif Display', Georgia, serif;
@@ -84,6 +92,13 @@ svg { flex-shrink: 0; }
   --hover:        rgba(14, 22, 38, 0.04);
   --hover-strong: rgba(14, 22, 38, 0.07);
   --hover-border: rgba(14, 22, 38, 0.20);
+
+  /* White page → navy nodes + white labels for contrast */
+  --node-a:        #1a3a6b;
+  --node-b:        #071428;
+  --sv-label:      rgba(255, 255, 255, 0.88);
+  --sv-label-leaf: rgba(16, 26, 46, 0.72);
+  --sv-icon:       rgba(255, 255, 255, 0.80);
 
   --shadow-sm: 0 1px 3px rgba(16,24,40,0.06), 0 4px 16px rgba(16,24,40,0.08);
   --shadow-md: 0 4px 24px rgba(16,24,40,0.12);
@@ -381,18 +396,13 @@ body {
 }
 
 /* ── Right: SVG network visual ── */
-/* The hero network graph sits on a light panel in BOTH themes so its
-   navy nodes / white in-node labels and orange links stay high-contrast.
-   (Dark-on-dark blended into the page background and read as muddy.) */
+/* The hero network graph sits directly on the page background (no panel).
+   It stays legible because its node/label/icon colors flip per theme
+   (see --node-*/--sv-* tokens). */
 .hero__visual {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(ellipse 80% 78% at 50% 42%, #f5f7fb 0%, #dde3ed 100%);
-  border: 1px solid rgba(20, 33, 63, 0.10);
-  border-radius: 28px;
-  padding: 1.5rem 1rem;
-  box-shadow: var(--shadow-md);
 }
 
 .hero__svg {
@@ -400,7 +410,13 @@ body {
   height: 100%;
   min-height: 460px;
   overflow: visible;
+  transform: scale(1.12);   /* enlarge a bit so node labels read clearly */
+  transform-origin: center;
 }
+
+/* Node fill gradient stops — driven per theme */
+.node-a { stop-color: var(--node-a); }
+.node-b { stop-color: var(--node-b); }
 
 /* SVG — decorative angle markers */
 .sv-deco {
@@ -489,7 +505,7 @@ body {
 .sv-cnf { stroke: rgba(255,107,43,0.9);  stroke-width: 2.5; }
 
 /* SVG — person icons */
-.sv-pi  { fill: rgba(255,255,255,0.78); }
+.sv-pi  { fill: var(--sv-icon); }
 .sv-cpi { fill: #ffffff; }
 
 /* SVG — labels */
@@ -497,12 +513,12 @@ body {
   font-family: var(--mono);
   font-size: 10px;
   font-weight: 500;
-  fill: rgba(255,255,255,0.85);
+  fill: var(--sv-label);
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-/* Leaf labels sit on the light panel (not inside a node) → dark text */
-.sv-leaf .sv-nlabel { fill: rgba(16, 26, 46, 0.72); }
+/* Leaf labels sit on the page background (not inside a node) → flip per theme */
+.sv-leaf .sv-nlabel { fill: var(--sv-label-leaf); }
 .sv-clabel {
   font-family: var(--serif);
   font-size: 28px;

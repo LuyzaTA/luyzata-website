@@ -51,7 +51,7 @@ svg { flex-shrink: 0; }
   --node-a:        #e9eef7;
   --node-b:        #c3d0e4;
   --sv-label:      rgba(14, 22, 38, 0.82);
-  --sv-label-leaf: rgba(226, 233, 244, 0.68);
+  --sv-label-leaf: rgba(233, 238, 247, 0.92);
   --sv-icon:       rgba(14, 22, 38, 0.80);
 
   /* Typography */
@@ -97,7 +97,7 @@ svg { flex-shrink: 0; }
   --node-a:        #1a3a6b;
   --node-b:        #071428;
   --sv-label:      rgba(255, 255, 255, 0.88);
-  --sv-label-leaf: rgba(16, 26, 46, 0.72);
+  --sv-label-leaf: rgba(16, 26, 46, 0.92);
   --sv-icon:       rgba(255, 255, 255, 0.80);
 
   --shadow-sm: 0 1px 3px rgba(16,24,40,0.06), 0 4px 16px rgba(16,24,40,0.08);
@@ -464,7 +464,7 @@ body {
 .sv-pulse.p12 { animation-delay: 1.7s;  animation-duration: 2.5s; }
 
 /* SVG — leaf nodes */
-.sv-leaf { opacity: 0.72; }
+.sv-leaf { opacity: 0.95; }
 .sv-leaf .sv-nr-outer { stroke-dasharray: 3 4; }
 
 /* SVG — floating dots */

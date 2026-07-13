@@ -85,9 +85,8 @@ are independent IIFEs, loaded in this order and coupled only through the DOM:
 
 - **`js/theme.js`** — light/dark theme toggle (the sun/moon button in the nav). Loaded first.
   The actual initial theme is set by a small **inline script in `<head>`** (before first paint,
-  to avoid a flash): it reads `localStorage['theme']`, falling back to the OS
-  `prefers-color-scheme`. `theme.js` only wires the toggle button (flips + persists) and keeps
-  following the OS setting live *until* the visitor makes an explicit choice.
+  to avoid a flash): it reads `localStorage['theme']`, **defaulting to light** on first visit.
+  `theme.js` only wires the toggle button (flips + persists the choice).
 
 - **`css/style.css`** — one stylesheet. Design tokens live in `:root` (dark cinematic theme,
   `--accent: #ff6b2b`). Section styling is organized under banner comments.

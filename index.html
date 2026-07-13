@@ -20,15 +20,15 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;450;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Set theme before first paint to avoid a flash of the wrong theme -->
+  <!-- Set theme before first paint to avoid a flash of the wrong theme.
+       Defaults to light; a visitor's manual toggle is remembered. -->
   <script>
     (function () {
       try {
-        var stored = localStorage.getItem('theme');
-        var theme = stored || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        var theme = localStorage.getItem('theme') || 'light';
         document.documentElement.setAttribute('data-theme', theme);
       } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'dark');
+        document.documentElement.setAttribute('data-theme', 'light');
       }
     })();
   </script>

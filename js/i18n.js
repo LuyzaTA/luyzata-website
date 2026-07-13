@@ -11,7 +11,7 @@
       'nav.contact':     'Contact',
       'nav.dutch':       'Dutch',
 
-      'hero.label':       'DB2 LUW · Data Engineering · AI Practitioner',
+      'hero.label':       'DB2 LUW · Cloud Data Engineering · AI Practitioner',
       'hero.statement':   'Fourteen years ensuring the data is available. Now making sure it thinks.',
       'hero.location':    'Netherlands',
       'hero.status':      'Open to opportunities',
@@ -163,7 +163,7 @@
       'nav.contact':     'Contato',
       'nav.dutch':       'Holandês',
 
-      'hero.label':       'DB2 LUW · Engenharia de Dados · IA',
+      'hero.label':       'DB2 LUW · Engenharia de Dados em Nuvem · IA',
       'hero.statement':   'Catorze anos garantindo a disponibilidade dos dados. Agora garantindo que eles pensem.',
       'hero.location':    'Países Baixos',
       'hero.status':      'Aberta a oportunidades',
@@ -315,7 +315,7 @@
       'nav.contact':     'Contact',
       'nav.dutch':       'Nederlands',
 
-      'hero.label':       'DB2 LUW · Data Engineering · AI-practitioner',
+      'hero.label':       'DB2 LUW · Cloud Data Engineering · AI-practitioner',
       'hero.statement':   'Veertien jaar zorgen dat de data beschikbaar is. Nu zorgen dat het denkt.',
       'hero.location':    'Nederland',
       'hero.status':      'Open voor kansen',

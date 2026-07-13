@@ -96,8 +96,10 @@ are independent IIFEs, loaded in this order and coupled only through the DOM:
   `--border*`, `--glass*`, `--hover*`, `--shadow*`) — do not hardcode dark-only values, or
   they will break in light mode. **Exception — the hero network graph:** it is built from
   dark-navy SVG node circles with white labels *inside* them, so it cannot recolor cleanly.
-  In light mode `.hero__visual` keeps a dark rounded backdrop and the SVG is left untouched;
-  that dark-panel choice is deliberate.
+  Instead `.hero__visual` gives it a **light panel in BOTH themes** (dark-on-dark read as
+  muddy in dark mode). Node labels that sit *inside* a navy circle stay white; the leaf
+  labels (`.sv-leaf .sv-nlabel`) sit on the light panel, so they are positioned below their
+  node and colored dark. Keep that in mind when adding/moving graph labels.
 
 ## Content-editing conventions
 

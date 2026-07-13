@@ -95,14 +95,6 @@ body,
 .btn,
 .tags span { transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease; }
 
-/* In light mode the hero network graph keeps a dark backdrop so its
-   navy nodes and white labels stay legible (see CLAUDE.md / light-mode note) */
-:root[data-theme="light"] .hero__visual {
-  background: radial-gradient(ellipse 75% 75% at 50% 45%, #12213f 0%, #070d1a 100%);
-  border-radius: 28px;
-  padding: 1.75rem 1.25rem;
-  box-shadow: var(--shadow-md), inset 0 0 0 1px rgba(255,255,255,0.04);
-}
 
 /* ── BASE ── */
 html { scroll-behavior: smooth; }
@@ -389,10 +381,18 @@ body {
 }
 
 /* ── Right: SVG network visual ── */
+/* The hero network graph sits on a light panel in BOTH themes so its
+   navy nodes / white in-node labels and orange links stay high-contrast.
+   (Dark-on-dark blended into the page background and read as muddy.) */
 .hero__visual {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: radial-gradient(ellipse 80% 78% at 50% 42%, #f5f7fb 0%, #dde3ed 100%);
+  border: 1px solid rgba(20, 33, 63, 0.10);
+  border-radius: 28px;
+  padding: 1.5rem 1rem;
+  box-shadow: var(--shadow-md);
 }
 
 .hero__svg {
@@ -495,12 +495,14 @@ body {
 /* SVG — labels */
 .sv-nlabel {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 500;
-  fill: rgba(255,255,255,0.6);
-  letter-spacing: 0.04em;
+  fill: rgba(255,255,255,0.85);
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
+/* Leaf labels sit on the light panel (not inside a node) → dark text */
+.sv-leaf .sv-nlabel { fill: rgba(16, 26, 46, 0.72); }
 .sv-clabel {
   font-family: var(--serif);
   font-size: 28px;

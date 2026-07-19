@@ -2,6 +2,7 @@
   'use strict';
 
   var btn          = document.getElementById('ttsBtn');
+  if (!btn) return;              /* Dutch/TTS section is hidden — nothing to wire up */
   var label        = btn.querySelector('.tts-label');
   var active       = false;
   var currentAudio = null;

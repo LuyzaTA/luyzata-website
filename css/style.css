@@ -398,7 +398,7 @@ body {
 /* ── Right: SVG network visual ── */
 /* The hero network graph sits directly on the page background (no panel).
    It stays legible because its node/label/icon colors flip per theme
-   (see --node-*/--sv-* tokens). */
+   (see --node- and --sv- tokens). */
 .hero__visual {
   display: flex;
   align-items: center;
